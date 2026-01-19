@@ -1,0 +1,27 @@
+<Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <Header>
+        <WarcraftHeader>
+            <EsbMessageID>your_esb_message_id</EsbMessageID>
+            <EsbRequestDateTime>2025-09-25T12:00:00</EsbRequestDateTime>
+            <EsbResponseDateTime>2025-09-25T12:05:00</EsbResponseDateTime>
+            <EsbIMLNumber>123456</EsbIMLNumber>
+            <EsbOperationName>Recharge</EsbOperationName>
+        </WarcraftHeader>
+    </Header>
+    <Body>
+        <RegularRechargeResponse>
+            <RegularRechargeResult>
+                <ClientTrxId>1234567890</ClientTrxId>
+                <RcgId>1</RcgId>
+                <ResultCode>86</ResultCode>
+                <Currency>USD</Currency>
+                <WalletId>12345</WalletId>
+                <RechargeAmount>2</RechargeAmount>
+                <NewBalance>150.00</NewBalance>
+                <NewExpiryDate>2025-12-31</NewExpiryDate>
+                <BonusInfo xsi:nil="true" />
+                <ResultNamespace>NamespaceValue</ResultNamespace>
+            </RegularRechargeResult>
+        </RegularRechargeResponse>
+    </Body>
+</Envelope>

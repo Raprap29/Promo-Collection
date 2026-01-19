@@ -1,0 +1,11 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:soap="http://soap.amaretto.globe.com">
+    <soapenv:Header/>
+    <soapenv:Body>
+        <soap:createSessionResponse>
+            <soap:return>
+                <soap:sessionResultCode>0</soap:sessionResultCode>
+                <soap:session>session123</soap:session>
+            </soap:return>
+        </soap:createSessionResponse>
+    </soapenv:Body>
+</soapenv:Envelope>

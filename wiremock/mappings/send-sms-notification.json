@@ -1,0 +1,13 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/apigw/sit5/dodrio/ws/soap12/apikey_auth/notif"
+  },
+  "response": {
+    "status": 200,
+    "bodyFileName": "send-sms-notification.xml",
+    "headers": {
+      "Content-Type": "application/soap+xml"
+    }
+  }
+}

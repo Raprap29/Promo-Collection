@@ -1,0 +1,11 @@
+<soapEnv:Envelope xmlns:soapEnv="http://schemas.xmlsoap.org/soap/envelope/">									
+    <soapEnv:Body>									
+        <TopupResponse>
+           <Return>
+            <ResultCode>0</ResultCode>
+            <SessionResultCode>0</SessionResultCode>    
+            <TransId>012345678910</TransId>
+           </Return>
+        </TopupResponse>				
+    </soapEnv:Body>									
+</soapEnv:Envelope>

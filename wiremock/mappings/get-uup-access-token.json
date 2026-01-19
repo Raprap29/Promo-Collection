@@ -1,0 +1,13 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "/apigw/sit5/dodrio/rs/json/uup/authenticate"
+  },
+  "response": {
+    "status": 200,
+    "bodyFileName": "get-uup-access-respons-token.json",
+    "headers": {
+      "Content-Type": "application/soap+xml;charset=UTF-8"
+    }
+  }
+}

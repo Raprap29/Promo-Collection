@@ -1,0 +1,13 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/hip-ws-namax/ws/soap11/top-up"
+  },
+  "response": {
+    "status": 200,
+    "bodyFileName": "amax-top-up.xml",
+    "headers": {
+      "Content-Type": "application/soap+xml;charset=UTF-8"
+    }
+  }
+}

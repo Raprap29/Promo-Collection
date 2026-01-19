@@ -1,0 +1,11 @@
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope"
+               xmlns:rep="http://www.globe.com/warcraft/wsdl/replenishment/">
+   <soap:Header/>
+   <soap:Body>
+      <rep:GetTopupHistory>
+         <MSISDN>9123456789</MSISDN>
+         <FromDate>2025-09-01T00:00:00</FromDate>
+         <ToDate>2025-09-25T23:59:59</ToDate>
+      </rep:GetTopupHistory>
+   </soap:Body>
+</soap:Envelope>

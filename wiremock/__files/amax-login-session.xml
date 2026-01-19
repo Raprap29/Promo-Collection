@@ -1,0 +1,10 @@
+<soapEnv:Envelope xmlns:soapEnv="http://schemas.xmlsoap.org/soap/envelope/">							
+    <soapEnv:Body>									
+        <LoginResponse>
+           <Return>
+            <ResultCode>0</ResultCode>
+            <SessionResultCode>0</SessionResultCode>
+           </Return>
+        </LoginResponse>				
+    </soapEnv:Body>									
+</soapEnv:Envelope>

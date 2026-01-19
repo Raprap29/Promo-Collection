@@ -1,0 +1,11 @@
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+               xmlns:not="http://example.com/notification">
+    <soap:Header/>
+    <soap:Body>
+        <not:SendSMSNotification>
+            <SMSSourceAddress>1234567890</SMSSourceAddress>
+            <MSISDN>9271234567</MSISDN>
+            <NotifPatternId>1</NotifPatternId>
+        </not:SendSMSNotification>
+    </soap:Body>
+</soap:Envelope>

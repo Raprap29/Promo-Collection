@@ -1,0 +1,13 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/gettopuphist"
+  },
+  "response": {
+    "status": 200,
+    "bodyFileName": "top-up-history.xml",
+    "headers": {
+      "Content-Type": "application/soap+xml;charset=UTF-8"
+    }
+  }
+}

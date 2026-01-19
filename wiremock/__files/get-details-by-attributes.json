@@ -1,0 +1,26 @@
+{
+  "resourceType": 1,
+  "resourceValue": "09271234567",
+  "AttributeValues": [
+    {
+      "Name": "clla",
+      "Value": "Load Tipid Plan"
+    },
+    {
+      "Name": "btc",
+      "Value": "GHP-PREPAID"
+    },
+    {
+      "Name": "cfutd",
+      "Value": "Consumer"
+    },
+    {
+      "Name": "prodt",
+      "Value": "Postpaid"
+    },
+    {
+      "Name": "clsd",
+      "Value": "2025-09-10 13:45:00"
+    }
+  ]
+}
