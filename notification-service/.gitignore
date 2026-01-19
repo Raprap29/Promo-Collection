@@ -1,0 +1,15 @@
+.env
+*.env
+.env*
+.DS_Store.mod
+.DS_Store
+*.json
+build
+dist
+*.log
+main
+*.out
+*.html
+coverage
+coverage*
+.scannerwork
