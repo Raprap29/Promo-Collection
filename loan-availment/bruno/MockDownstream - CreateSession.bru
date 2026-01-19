@@ -1,0 +1,19 @@
+meta {
+  name: MockDownstream - CreateSession
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{mockServer}}/createSession
+  body: xml
+  auth: none
+}
+
+body:xml {
+  <soapEnv:Envelope xmlns:soapEnv="http://schemas.xmlsoap.org/soap/envelope/">
+      <soapEnv:Body>
+          <createSession xmlns="http://soap.amaretto.globe.com" />
+      </soapEnv:Body>
+  </soapEnv:Envelope>
+}

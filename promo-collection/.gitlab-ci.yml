@@ -1,0 +1,10 @@
+include:
+  - component: $CI_SERVER_FQDN/globetelecom/common-toolchains/pipeline-coe/golang/full-pipeline@v0.1.16
+    inputs:
+      runner_tag: $RUNNER_TAG
+      artifact_sa_username: $PE_ARTIFACT_SA_USERNAME
+      artifact_sa_token: $PE_ARTIFACT_SA_TOKEN
+      artifact_repo_url: $PE_ARTIFACTORY_URL
+      artifact_docker_local_repo: $PE_ARTIFACT_DOCKER_LOCAL_REPO
+
+stages: [lint, test, build_image, prisma_scan, publish_image]

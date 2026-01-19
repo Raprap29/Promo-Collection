@@ -1,0 +1,17 @@
+meta {
+  name: Arrow Loans Cache
+  type: http
+  seq: 23
+}
+
+post {
+  url: {{availmentHost}}/ArrowLoansCache
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "endDatetime": "2024-08-28T08:35:00.000+00:00"
+  }
+}

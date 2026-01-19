@@ -1,0 +1,28 @@
+package log_messages
+
+const (
+	PubsubConsumerCreated                         = "Pubsub Consumer created successfully"
+	PubsubPublisherCreated                        = "Pubsub Publisher client created successfully"
+	PubsubConsumerClosed                          = "Pubsub Consumer closed successfully"
+	KafkaConsumerCreated                          = "Kafka Consumer created successfully"
+	KafkaConsumerClosed                           = "Kafka Consumer closed successfully"
+	KafkaProducerCreated                          = "Successfully created Kafka producer"
+	SuccessPubSubPublisher                        = "PubSub Published message successfully: %v"
+	SuccessLoansDocumentUpdationMongoDb           = "Successfully updated loans document"
+	SuccessUnpaidLoansCreation                    = "Successfully inserted unpaid loans document"
+	SuccessPartialCollectionNotificationData      = "Successfully fetched data for partial collection notification"
+	PartialCollectionNotificationPayload          = "Successfully created partial collection notification payload"
+	SuccessPartialCollectionNotificationPublished = "Successfully published partial collection notification to pubsub"
+	SuccessPartialCollection                      = "Successfully performed partial data collection"
+	SuccessFullCollection                         = "Successfully performed full data collection"
+	SuccessClosedLoansCreation                    = "Successfully inserted closed loans document"
+	SuccessFullCollectionNotificationData         = "Successfully fetched data for full collection notification"
+	FullCollectionNotificationPayload             = "Successfully created full collection notification payload"
+	SuccessFullCollectionNotificationPublished    = "Successfully published full collection notification to pubsub"
+	SuccessUpdatedCollectionsDocument             = "Successfully updated collections document"
+	SuccessUpdatedUnpaidLoansDocument             = "Successfully updated latest unpaidLoans document"
+	UpdateResult                                  = "update result:"
+	KafkaRetryProcessingCompleted                 = "Kafka retry processing completed"
+	UploadedToGCSBucket                           = "Uploaded to GCS bucket successfully"
+	GCSClientClosedSuccessfully                   = "GCS client closed successfully"
+)

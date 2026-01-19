@@ -1,0 +1,25 @@
+meta {
+  name: MockDownstream - Get UUP Access token
+  type: http
+  seq: 9
+}
+
+get {
+  url: {{mockServer}}/dev/get-access-token
+  body: xml
+  auth: none
+}
+
+body:xml {
+  <?xml version="1.0" encoding="utf-8"?>
+  <soapEnv:Envelope xmlns:soapEnv="http://schemas.xmlsoap.org/soap/envelope/">
+      <soapEnv:Header>
+          <clientID>abc123-client-id</clientID>
+          <clientSecret>1f9d86b3-e69f-4d32-9bd2-abc123456789</clientSecret>
+          <apikey>y2hlLW1pa2UtZGFzaA==</apikey>
+          <x-api-key>apigw98765</x-api-key>
+      </soapEnv:Header>
+      <soapEnv:Body/>
+  </soapEnv:Envelope>
+  
+}

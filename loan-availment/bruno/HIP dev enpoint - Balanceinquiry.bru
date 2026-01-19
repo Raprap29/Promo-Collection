@@ -1,0 +1,29 @@
+meta {
+  name: HIP dev enpoint - Balanceinquiry
+  type: http
+  seq: 17
+}
+
+post {
+  url: {{balanceinquiry_dev_endpoint}}
+  body: xml
+  auth: none
+}
+
+headers {
+  x-api-key: 565f8968-c1d4-436a-acdb-c8af1cf868f3
+}
+
+body:xml {
+  <soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:rep="http://www.globe.com/warcraft/wsdl/replenishment/">
+     <soap:Header/>
+     <soap:Body>
+        <rep:BalanceInquiry>
+           <PrimaryResourceType>C</PrimaryResourceType>
+           <PrimaryResourceValue>9270935520</PrimaryResourceValue>
+           <!--Optional:-->
+           <SendSMS>false</SendSMS>
+        </rep:BalanceInquiry>
+     </soap:Body>
+  </soap:Envelope>
+}

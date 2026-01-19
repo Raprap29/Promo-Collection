@@ -1,0 +1,25 @@
+meta {
+  name: MockDownstream - TopupHistory
+  type: http
+  seq: 7
+}
+
+post {
+  url: {{mockServer}}/gettopuphist
+  body: xml
+  auth: none
+}
+
+body:xml {
+  <?xml version="1.0" encoding="utf-8"?>
+  <soapEnv:Envelope xmlns:soapEnv="http://schemas.xmlsoap.org/soap/envelope/">
+      <soap:Header/>
+      <soapEnv:Body>
+          <rep:GetTopupHistory>
+              <MSISDN>9444270521</MSISDN>
+              <FromDate>2022-02-29T12:14:00</FromDate>
+              <ToDate>2023-02-29T12:14:00</ToDate>
+          </rep:GetTopupHistory>
+      </soapEnv:Body>
+  </soapEnv:Envelope>
+}

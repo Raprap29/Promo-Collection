@@ -1,0 +1,64 @@
+server:
+  port: 8080
+
+mongo:
+  username: "phlamille679"
+  password: "a36nK41I1eHADXCX"
+  uri: "mongodb+srv://cluster0.rqlopnp.mongodb.net"
+  db_name: "Loan_Prod"
+  max_pool_size: 20
+  min_pool_size: 10
+  max_conn_idle_minutes: 30m
+  connect_timeout_seconds: 10s
+
+redis:
+  addr: "redis:6379"
+  password: ""
+  db: 0
+  enable_tls: false
+  connect_timeout_seconds: 10s
+  cert_content: ""
+
+kafka:
+  server: "kafka:9092"
+  promo_topic: "dodrio_promo_collection_v1"
+  security_protocol: "SASL_PLAINTEXT"
+  sasl_mechanism: "PLAIN"
+  sasl_username: "admin"
+  sasl_password: "admin-secret"
+  session_timeout_ms: 15000
+  client_id: "ccloud-go-client-8ca44496-813d-4054-8e7f-83d86b95f300"
+  group_id: "dodrio_consumer_staging"
+
+pubsub:
+  project_id: "glo-isg-reloads-project-dev"
+  topic: "glo-isg-dodrio-d-promo-collection-topic-ddr729"
+  subscription: "glo-isg-dodrio-d-promo-collection-subscription-ddr729"
+  notification_topic: "glo-isg-dodrio-d-notification-topic-ddr-762"
+  min_backoff_seconds: 10
+  max_backoff_seconds: 300
+  topic_msg_retention: 7
+  dlq_msg_retention: 7
+  max_delivery_attempts: 15
+
+hip:
+  decrement_wallet_subscription_url: "http://wiremock:8080/apigw/sit3/dodrio/rs/json/apikey_auth/promo-mgmt/DecrementWalletSubscription"
+  decrement_wallet_subscription_api_key: ""
+  http_timeout_seconds: 10s
+  retrieve_subscriber_usage_url: "http://wiremock:8080/apigw/sit3/dodrio/v1/usageConsumption"
+  retrieve_subscriber_usage_api_key: ""
+  retrieve_subscriber_usage_source_channel: "DODRIO"
+
+kafka_retry_service:
+  retry_start_date: "2025-10-15"
+  worker_count: 5
+  buffer_size: 10
+  max_batch_size: 20 # Max docs per batch before publishing to Kafka
+  mongo_batch_size: 100
+  flush_interval: 500ms # Time interval to flush pending batch even if not full
+
+logging:
+  log_level: "info"
+
+gcs:
+  bucket_name: "isg-dodrio-d-gcs-app-dd79"

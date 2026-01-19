@@ -1,0 +1,31 @@
+meta {
+  name: MockDownstream - GetDetailsBy attribute
+  type: http
+  seq: 12
+}
+
+get {
+  url: {{mockServer}}/EnterpriseData
+  body: xml
+  auth: none
+}
+
+body:xml {
+  <soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ent="http://www.globe.com/warcraft/wsdl/enterprise-data/">
+     <soap:Header/>
+     <soap:Body>
+        <ent:GetDetailsByAttributes>
+           <Username>dodrio</Username>
+           <ResourceType>msisdn</ResourceType>
+           <ResourceValue>9064512819</ResourceValue>
+               <Attributes>
+             <Attribute>btc</Attribute>
+             <Attribute>cfutd</Attribute>
+   <Attribute>prodt</Attribute>
+   <Attribute>clla</Attribute>
+   <Attribute>clsd</Attribute>
+          </Attributes>
+       </ent:GetDetailsByAttributes>
+    </soap:Body>
+  </soap:Envelope>
+}

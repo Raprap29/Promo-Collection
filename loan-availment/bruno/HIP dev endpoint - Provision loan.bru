@@ -1,0 +1,30 @@
+meta {
+  name: HIP dev endpoint - Provision loan
+  type: http
+  seq: 6
+}
+
+post {
+  url: {{amax_dev_endpoint}}
+  body: xml
+  auth: none
+}
+
+headers {
+  x-api-key: 565f8968-c1d4-436a-acdb-c8af1cf868f3
+}
+
+body:xml {
+  <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:soap="http://soap.amaretto.globe.com">
+     <soapenv:Header/>
+     <soapenv:Body>
+        <soap:topup>
+           <session>C9712ABC56BE480282B2DF9A6F0508BA2A2E1E69640D630ABB2798357C23E6E1</session>
+           <extTransID>143445983</extTransID>
+           <target>9270935520</target>
+           <product>LD</product>
+           <amount>1</amount>
+        </soap:topup>
+     </soapenv:Body>
+  </soapenv:Envelope>
+}

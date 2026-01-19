@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "Bruno Downstream Collections (availment service))",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}

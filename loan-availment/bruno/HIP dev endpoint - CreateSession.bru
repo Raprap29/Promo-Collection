@@ -1,0 +1,24 @@
+meta {
+  name: HIP dev endpoint - CreateSession
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{amax_dev_endpoint}}
+  body: xml
+  auth: none
+}
+
+headers {
+  x-api-key: 565f8968-c1d4-436a-acdb-c8af1cf868f3
+}
+
+body:xml {
+  <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:soap="http://soap.amaretto.globe.com">
+     <soapenv:Header/>
+     <soapenv:Body>
+        <soap:createSession/>
+     </soapenv:Body>
+  </soapenv:Envelope>
+}

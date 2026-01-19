@@ -1,0 +1,46 @@
+meta {
+  name: TCRL dev endpoint - Regular Recharge
+  type: http
+  seq: 14
+}
+
+post {
+  url: {{tcrl_dev_endpoint}}
+  body: xml
+  auth: none
+}
+
+body:xml {
+  <soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:rep="http://www.globe.com/warcraft/wsdl/replenishment/">
+     <soap:Header/>
+     <soap:Body>
+        <rep:RegularRecharge>
+           <BaseChannel>
+              <ReferenceId>RPL9_AMAX</ReferenceId>
+              <RequestDateTime>2014-01-08T10:56:58.798</RequestDateTime>
+              <TransactionId>TransID12345</TransactionId>
+           </BaseChannel>
+           <BaseRegularRecharge>
+              <Amount>1.00</Amount>
+              <Currency>PHP</Currency>
+           </BaseRegularRecharge>
+           <Subscriber>
+              <PrimaryResourceType>C</PrimaryResourceType>
+              <PrimaryResourceValue>9270935520</PrimaryResourceValue>
+           </Subscriber>
+           <Method>
+              <MethodName>DEC</MethodName>
+              <ReasonCode>NA</ReasonCode>
+              <!--Optional:-->
+              <ReasonDesc>none</ReasonDesc>
+              <!--Optional:-->
+              <FreeText>0</FreeText>
+              <!--Optional:-->
+              <CalcExpDateInd>Y</CalcExpDateInd>
+           </Method>
+           <!--Optional:-->
+           <SendSMS>false</SendSMS>
+        </rep:RegularRecharge>
+     </soap:Body>
+  </soap:Envelope>
+}

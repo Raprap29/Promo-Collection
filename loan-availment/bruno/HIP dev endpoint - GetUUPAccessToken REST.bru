@@ -1,0 +1,40 @@
+meta {
+  name: HIP dev endpoint - GetUUPAccessToken REST
+  type: http
+  seq: 10
+}
+
+get {
+  url: {{uup_dev_host}}/authenticate
+  body: json
+  auth: none
+}
+
+headers {
+  apiKey: Bnp0rgstFl7i0SnC5pn2afwBm0sKT8X6VY6AVXka
+  x-api-key: my6dofmo33
+  clientID: 7hila3q6oa0dhvm4s9amkq59gg
+  clientSecret: tj7e1luoq0o5b15k2u9pm5si2usfhbks8rvkuiamaqpof2udjs2
+}
+
+body:json {
+  {
+      "clientID": "7hila3q6oa0dhvm4s9amkq59gg",
+      "clientSecret": "tj7e1luoq0o5b15k2u9pm5si2usfhbks8rvkuiamaqpof2udjs2",
+      "apiKey":"my6dofmo33"
+  }
+}
+
+body:xml {
+  <?xml version="1.0" encoding="utf-8"?>
+  <soapEnv:Envelope xmlns:soapEnv="http://schemas.xmlsoap.org/soap/envelope/">
+      <soapEnv:Header>
+          <clientID>abc123-client-id</clientID>
+          <clientSecret>1f9d86b3-e69f-4d32-9bd2-abc123456789</clientSecret>
+          <apikey>y2hlLW1pa2UtZGFzaA==</apikey>
+          <x-api-key>apigw98765</x-api-key>
+      </soapEnv:Header>
+      <soapEnv:Body/>
+  </soapEnv:Envelope>
+  
+}

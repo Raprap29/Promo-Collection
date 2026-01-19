@@ -1,0 +1,39 @@
+meta {
+  name: MockDownstream - Regular Recharge
+  type: http
+  seq: 13
+}
+
+post {
+  url: {{mockServer}}/replenishment
+  body: xml
+  auth: none
+}
+
+body:xml {
+  <soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:rep="http://www.globe.com/warcraft/wsdl/replenishment/">
+      <soap:Header/>
+      <soap:Body>
+          <rep:RegularRecharge>
+              <BaseChannel>
+                  <ReferenceId>RPL9_AMAX</ReferenceId>
+                  <RequestDateTime>2021-01-19T16:30:00</RequestDateTime>
+                  <TransactionId>12345</TransactionId>
+              </BaseChannel>
+              <BaseRegularRecharge>
+                  <Amount>12</Amount>
+                  <Currency>PHP</Currency>
+              </BaseRegularRecharge>
+              <Subscriber>
+                  <PrimaryResourceType>c</PrimaryResourceType>
+                  <PrimaryResourceValue>9271042579</PrimaryResourceValue>
+              </Subscriber>
+              <Method>
+                  <MethodName>NA</MethodName>
+                  <ReasonCode>NA</ReasonCode>
+              </Method>
+              <SendSMS>false</SendSMS>
+          </rep:RegularRecharge>
+      </soap:Body>
+  </soap:Envelope>
+}

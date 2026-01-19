@@ -1,0 +1,24 @@
+meta {
+  name: TCRL dev endpoint - TopupHistory
+  type: http
+  seq: 8
+}
+
+post {
+  url: {{tcrl_dev_endpoint}}
+  body: xml
+  auth: none
+}
+
+body:xml {
+  <soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:rep="http://www.globe.com/warcraft/wsdl/replenishment/">
+     <soap:Header/>
+     <soap:Body>
+        <rep:GetTopupHistory>
+           <MSISDN>9270935520</MSISDN>
+           <FromDate>2024-01-22</FromDate>
+           <ToDate>2024-08-22</ToDate>
+        </rep:GetTopupHistory>
+     </soap:Body>
+  </soap:Envelope>
+}

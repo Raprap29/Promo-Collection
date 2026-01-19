@@ -1,0 +1,199 @@
+version: "3.8"
+services:
+  loan-availment:
+    container_name: loan-availment
+    build:
+      context: ./loan-availment
+      dockerfile: Dockerfile
+    ports:
+      - "8083:8080"
+    networks:
+      - devnet
+    restart: unless-stopped
+    volumes:
+      - ./loan-availment:/app
+    working_dir: /app
+    command: go run cmd/main.go
+    environment:
+      NODE_ENV: development
+      CHOKIDAR_USEPOLLING: "true"
+      WATCHPACK_POLLING: "true"
+
+  promo-collection:
+    container_name: promo-collection
+    build:
+      context: ./promo-collection
+      dockerfile: Dockerfile
+    ports:
+      - "8081:8080"
+    networks:
+      - devnet
+    restart: unless-stopped
+    volumes:
+      - ./promo-collection:/app
+    working_dir: /app
+    command: go run cmd/promo-collection/main.go
+    environment:
+      NODE_ENV: development
+      CHOKIDAR_USEPOLLING: "true"
+      WATCHPACK_POLLING: "true"
+
+  promo-collection-worker:
+    container_name: promo-collection-worker
+    build:
+      context: ./promo-collection-worker
+      dockerfile: Dockerfile
+    ports:
+      - "8082:8080"
+    networks:
+      - devnet
+    restart: unless-stopped
+    volumes:
+      - ./promo-collection-worker:/app
+    command: go run cmd/promo-collection-worker/main.go
+    environment:
+      NODE_ENV: development
+      CHOKIDAR_USEPOLLING: "true"
+      WATCHPACK_POLLING: "true"
+
+  pubsub:
+    container_name: pubsub
+    build:
+      context: .
+      dockerfile: pubsub.Dockerfile
+    ports:
+      - "8085:8085"
+    environment:
+      - PUBSUB_EMULATOR_HOST=pubsub:8085
+      - GOOGLE_CLOUD_PROJECT=local-dodrio-project
+    command: gcloud beta emulators pubsub start --host-port=0.0.0.0:8085
+    volumes:
+      - ./pub-sub-config:/root/.config
+    networks:
+      - devnet
+    restart: unless-stopped
+
+  redis:
+    image: redis:latest
+    container_name: redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - ./data/redis:/data
+    networks:
+      - devnet
+    restart: unless-stopped
+
+  gcs:
+    image: fsouza/fake-gcs-server
+    container_name: fake_gcs
+    ports:
+      - "4443:4443"
+    entrypoint: ["/bin/fake-gcs-server"]
+    command:
+      [
+        "-scheme",
+        "http",
+        "-port",
+        "4443",
+        "-public-host",
+        "gcs:4443",
+        "-external-url",
+        "http://gcs:4443",
+        "-backend",
+        "filesystem",
+        "-filesystem-root",
+        "/storage",
+      ]
+    volumes:
+      - gcs_data:/data
+    environment:
+      STORAGE_EMULATOR_HOST: http://gcs:4443
+    networks:
+      - devnet
+    restart: unless-stopped
+
+  wiremock:
+    image: wiremock/wiremock:latest
+    container_name: wiremock
+    volumes:
+      - ./wiremock/mappings:/home/wiremock/mappings
+      - ./wiremock/__files:/home/wiremock/__files
+    command: ["--verbose"]
+    ports:
+      - "8080:8080"
+    networks:
+      - devnet
+    restart: unless-stopped
+
+  zookeeper:
+    image: confluentinc/cp-zookeeper:7.6.0
+    container_name: zookeeper
+    ports:
+      - "2181:2181"
+    environment:
+      ZOOKEEPER_CLIENT_PORT: 2181
+      ZOOKEEPER_TICK_TIME: 2000
+      KAFKA_OPTS: "-Djava.security.auth.login.config=/etc/kafka/zookeeper_jaas.conf"
+    volumes:
+      - ./zookeeper_jaas.conf:/etc/kafka/zookeeper_jaas.conf
+    networks:
+      - devnet
+
+  kafka:
+    image: confluentinc/cp-kafka:7.6.0
+    container_name: kafka
+    depends_on:
+      - zookeeper
+    ports:
+      - "9092:9092"
+      - "9093:9093"
+    environment:
+      KAFKA_BROKER_ID: 1
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+      ZOOKEEPER_SASL_ENABLED: "false"
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: SASL_PLAINTEXT:SASL_PLAINTEXT,PLAINTEXT:PLAINTEXT
+      KAFKA_ADVERTISED_LISTENERS: SASL_PLAINTEXT://localhost:9092
+      KAFKA_LISTENERS: SASL_PLAINTEXT://0.0.0.0:9092
+      KAFKA_INTER_BROKER_LISTENER_NAME: SASL_PLAINTEXT
+      KAFKA_SASL_ENABLED_MECHANISMS: PLAIN
+      KAFKA_SASL_MECHANISM_INTER_BROKER_PROTOCOL: PLAIN
+      KAFKA_OPTS: "-Djava.security.auth.login.config=/etc/kafka/kafka_server_jaas.conf"
+      KAFKA_ALLOW_PLAINTEXT_LISTENER: "yes"
+      KAFKA_LOG4J_ROOT_LOGLEVEL: INFO
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+    volumes:
+      - ./kafka_server_jaas.conf:/etc/kafka/kafka_server_jaas.conf:ro
+    networks:
+      - devnet
+
+  nginx:
+    container_name: nginx
+    image: nginx:latest
+    ports:
+      - "8998:80"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+    networks:
+      - devnet
+    restart: unless-stopped
+    depends_on:
+      - loan-availment
+      - promo-collection
+      - promo-collection-worker
+      - pubsub
+      - redis
+      - wiremock
+      - gcs
+      - kafka
+      - mongo
+networks:
+  devnet:
+    driver: bridge
+volumes:
+  loan-availment_go_pkg: {}
+  promo-collection_go_pkg: {}
+  promo-collection-worker_go_pkg: {}
+  pubsub_data: {}
+  mongo_data: {}
+  gcs_data: {}

@@ -1,0 +1,28 @@
+meta {
+  name: HIP dev endpoint - loginSession
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{amax_dev_endpoint}}
+  body: xml
+  auth: none
+}
+
+headers {
+  x-api-key: 565f8968-c1d4-436a-acdb-c8af1cf868f3
+}
+
+body:xml {
+  <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:soap="http://soap.amaretto.globe.com">
+     <soapenv:Header/>
+     <soapenv:Body>
+        <soap:login>
+           <session>C9712ABC56BE480282B2DF9A6F0508BA2A2E1E69640D630ABB2798357C23E6E1</session>
+           <user>maagcaoili</user>
+           <password>4afeba4d8fb59b82d7e28a27ffc8477f98acb1a4</password>
+        </soap:login>
+     </soapenv:Body>
+  </soapenv:Envelope>
+}

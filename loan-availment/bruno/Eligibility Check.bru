@@ -1,0 +1,17 @@
+meta {
+  name: Eligibility Check
+  type: http
+  seq: 21
+}
+
+post {
+  url: {{availmentHost}}/IntegrationServices/Dodrio/EligibilityCheck
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "MSISDN": "9270943761"
+  }
+}

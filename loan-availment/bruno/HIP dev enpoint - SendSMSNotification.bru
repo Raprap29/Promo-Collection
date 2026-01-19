@@ -1,0 +1,36 @@
+meta {
+  name: HIP dev enpoint - SendSMSNotification
+  type: http
+  seq: 16
+}
+
+post {
+  url: {{send_sms_dev_enpoint}}
+  body: xml
+  auth: none
+}
+
+headers {
+  x-api-key: 565f8968-c1d4-436a-acdb-c8af1cf868f3
+}
+
+body:xml {
+  <soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope">
+      <soap:Body>
+          <not:SendSMSNotification>
+              <SMSSourceAddress/>
+              <MSISDN>9271013657</MSISDN>
+              <Message> "Loan Availment Successful"</Message>
+              <Status> true </Status>
+              <SMSMessage/>
+              <NotifPatternId>21461</NotifPatternId>
+              <NotifParameters>
+                  <NotifParameter>
+                      <Name>LOAN_FEE_AMT</Name>
+                      <Value>18</Value>
+                  </NotifParameter>
+              </NotifParameters>
+          </not:SendSMSNotification>
+      </soap:Body>
+  </soap:Envelope>
+}

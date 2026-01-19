@@ -1,0 +1,15 @@
+meta {
+  name: Rev Assurance Availment Report
+  type: http
+  seq: 26
+}
+
+get {
+  url: {{availmentHost}}/IntegrationServices/Dodrio/AppCreation/9270943761/USSD12345/keyword3?SystemClient=client1
+  body: none
+  auth: none
+}
+
+params:query {
+  SystemClient: client1
+}

@@ -1,0 +1,54 @@
+meta {
+  name: HIP dev endpoint - GetDetailsByAttribute REST
+  type: http
+  seq: 11
+}
+
+post {
+  url: {{uup_dev_host}}/subcriberDetails
+  body: json
+  auth: none
+}
+
+headers {
+  x-api-key: my6dofmo33
+  clientID: 7hila3q6oa0dhvm4s9amkq59gg
+  clientSecret: tj7e1luoq0o5b15k2u9pm5si2usfhbks8rvkuiamaqpof2udjs2
+  apikey: Bnp0rgstFl7i0SnC5pn2afwBm0sKT8X6VY6AVXka
+  username: dodrio-hip
+  token: eyJraWQiOiJja0lIQVNaeXdMS1Q3V3p2WFdpWXdoTmNCcDBiN3A4dmF0RWkzWjB3Y29VPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiI3aGlsYTNxNm9hMGRodm00czlhbWtxNTlnZyIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiaHR0cHM6XC9cL215NmRvZm1vMzMuZXhlY3V0ZS1hcGkuYXAtc291dGhlYXN0LTEuYW1hem9uYXdzLmNvbVwvZGV2XC9nZXQtc3Vic2NyaWJlci1wcm9maWxlIiwiYXV0aF90aW1lIjoxNzI3MTc5MDU5LCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuYXAtc291dGhlYXN0LTEuYW1hem9uYXdzLmNvbVwvYXAtc291dGhlYXN0LTFfYTk4RUpjQURYIiwiZXhwIjoxNzI3MTgyNjU5LCJpYXQiOjE3MjcxNzkwNTksInZlcnNpb24iOjIsImp0aSI6IjdmMjhmNzczLTY4YzAtNDJkMy05MWVkLWZhOWQ2NWM2ZGQzMCIsImNsaWVudF9pZCI6IjdoaWxhM3E2b2EwZGh2bTRzOWFta3E1OWdnIn0.fXfhhnFuI0F4x4l2WdzMQbNAl_iSrp-2t975wrs_HncqqstQOMIn-AfSabshDSWNgM5vIHxAIyh3dvQDtshALGD199rPVeTnrJ9NLRitEfe-sbgZWe08LP3r7OSe6JTpZzHZgz7DheJ4HG2JfWPrPcA_BrnpdLR_dDVPDWBpa8V4sJqhdY-4blEdwCpMSlaAIKG2N49ScH5D_nnUhnh6Ud9Mugh6HFF-LwT1MIeEvyxuNRYH_f42xAG-yBwFQjqG39AdfshEHZgHC_g2JcrIdV2gkQqqLR-SjrRDrsLd4RCihTvgIFwGnOktR9gOYChsnmHQnSgLBasXsQ_VZtVVbQ
+}
+
+body:json {
+  {
+    "resourceType": 1,
+    "resourceValue": "09176884210",
+    "attributes": [
+      "btc",
+      "prodt",
+      "cfutd",
+      "clla",
+      "clsd"
+    ]
+  }
+}
+
+body:xml {
+  <soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ent="http://www.globe.com/warcraft/wsdl/enterprise-data/">
+     <soap:Header/>
+     <soap:Body>
+        <ent:GetDetailsByAttributes>
+           <Username>dodrio</Username>
+           <ResourceType>msisdn</ResourceType>
+           <ResourceValue>9064512819</ResourceValue>
+               <Attributes>
+             <Attribute>btc</Attribute>
+             <Attribute>cfutd</Attribute>
+   <Attribute>prodt</Attribute>
+   <Attribute>clla</Attribute>
+   <Attribute>clsd</Attribute>
+          </Attributes>
+       </ent:GetDetailsByAttributes>
+    </soap:Body>
+  </soap:Envelope>
+}

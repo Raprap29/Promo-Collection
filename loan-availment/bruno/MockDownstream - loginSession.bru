@@ -1,0 +1,23 @@
+meta {
+  name: MockDownstream - loginSession
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{mockServer}}/loginSession
+  body: xml
+  auth: none
+}
+
+body:xml {
+  <soapEnv:Envelope xmlns:soapEnv="http://schemas.xmlsoap.org/soap/envelope/">
+      <soapEnv:Body>
+          <login xmlns="http://soap.amaretto.globe.com">
+              <session>5BACA8CA7CAB5D74286C8DCEEA10DACA2BBB4F1541356A84AF75EE95FF6413F6</session>
+              <user>dodrioweb1</user>
+              <password>0be7ca140c7e37c277cfc0e636b292d2a874f7e7</password>
+          </login>
+      </soapEnv:Body>
+  </soapEnv:Envelope>
+}

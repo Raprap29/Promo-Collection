@@ -1,0 +1,32 @@
+meta {
+  name: MockDownstream - SendSMSNotification
+  type: http
+  seq: 15
+}
+
+post {
+  url: {{mockServer}}/notification
+  body: xml
+  auth: none
+}
+
+body:xml {
+  <soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope">
+      <soap:Body>
+          <not:SendSMSNotification>
+              <SMSSourceAddress/>
+              <MSISDN>9271013657</MSISDN>
+              <Message> "Loan Availment Successful"</Message>
+              <Status> true </Status>
+              <SMSMessage/>
+              <NotifPatternId>21461</NotifPatternId>
+              <NotifParameters>
+                  <NotifParameter>
+                      <Name>LOAN_FEE_AMT</Name>
+                      <Value>18</Value>
+                  </NotifParameter>
+              </NotifParameters>
+          </not:SendSMSNotification>
+      </soap:Body>
+  </soap:Envelope>
+}
