@@ -229,7 +229,7 @@ func (v *ValidationService) CheckIfBrandAndProductMapped(ctx context.Context, br
 		"productId": productId,
 	}
 
-	logger.Debug(ctx, "brandId, productId is: %v, %v", brandId, productId)
+	logger.Info(ctx, "brandId, productId is: %v, %v", brandId, productId)
 	_, lpb_err := v.loanProductsBrandsRepo.LoanProductsBrandsByFilter(ctx, loanProductsBrandsFilter)
 	if lpb_err != nil {
 		if lpb_err == mongo.ErrNoDocuments {

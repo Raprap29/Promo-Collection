@@ -18,47 +18,45 @@ services:
       CHOKIDAR_USEPOLLING: "true"
       WATCHPACK_POLLING: "true"
 
-  promo-collection:
-    container_name: promo-collection
-    build:
-      context: ./promo-collection
-      dockerfile: Dockerfile
-    ports:
-      - "8081:8080"
-    networks:
-      - devnet
-    restart: unless-stopped
-    command: ["/app/promo-collection"]
-    environment:
-      NODE_ENV: development
-      CHOKIDAR_USEPOLLING: "true"
-      WATCHPACK_POLLING: "true"
+  # promo-collection:
+  #   container_name: promo-collection
+  #   build:
+  #     context: ./promo-collection
+  #     dockerfile: Dockerfile
+  #   ports:
+  #     - "8081:8080"
+  #   networks:
+  #     - devnet
+  #   restart: unless-stopped
+  #   command: ["/app/promo-collection"]
+  #   environment:
+  #     NODE_ENV: development
+  #     CHOKIDAR_USEPOLLING: "true"
+  #     WATCHPACK_POLLING: "true"
 
-  promo-collection-worker:
-    container_name: promo-collection-worker
-    build:
-      context: ./promo-collection-worker
-      dockerfile: Dockerfile
-    ports:
-      - "8082:8080"
-    networks:
-      - devnet
-    restart: unless-stopped
-    command: ["/app/promo-collection-worker"]
-    environment:
-      NODE_ENV: development
-      CHOKIDAR_USEPOLLING: "true"
-      WATCHPACK_POLLING: "true"
+  # promo-collection-worker:
+  #   container_name: promo-collection-worker
+  #   build:
+  #     context: ./promo-collection-worker
+  #     dockerfile: Dockerfile
+  #   ports:
+  #     - "8082:8080"
+  #   networks:
+  #     - devnet
+  #   restart: unless-stopped
+  #   command: ["/app/promo-collection-worker"]
+  #   environment:
+  #     NODE_ENV: development
+  #     CHOKIDAR_USEPOLLING: "true"
+  #     WATCHPACK_POLLING: "true"
 
   pubsub:
+    image: gcr.io/google.com/cloudsdktool/cloud-sdk:emulators
     container_name: pubsub
-    build:
-      context: .
-      dockerfile: pubsub.Dockerfile
     ports:
       - "8085:8085"
     environment:
-      - PUBSUB_EMULATOR_HOST=pubsub:8085
+      - PUBSUB_EMULATOR_HOST=localhost:8085
       - GOOGLE_CLOUD_PROJECT=local-dodrio-project
     command: gcloud beta emulators pubsub start --host-port=0.0.0.0:8085
     volumes:
@@ -173,8 +171,6 @@ services:
     restart: unless-stopped
     depends_on:
       - loan-availment
-      - promo-collection
-      - promo-collection-worker
       - pubsub
       - redis
       - wiremock
