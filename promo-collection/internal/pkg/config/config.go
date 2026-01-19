@@ -102,7 +102,7 @@ func assignDefaultConfigValues(cfg *AppConfig) *AppConfig {
 	cfg.Redis.Addr = GetEnvOrDefaultAsString("REDIS_ADDR", cfg.Redis.Addr)
 	cfg.Redis.Password = GetEnvOrDefaultAsString("REDIS_PASSWORD", cfg.Redis.Password)
 	cfg.Redis.DB = GetEnvOrDefaultAsInt("REDIS_DB", cfg.Redis.DB)
-	cfg.Redis.EnableTLS = GetEnvOrDefaultAsInt("REDIS_ENABLE_TLS", 1) == 1
+	cfg.Redis.EnableTLS = GetEnvOrDefaultAsInt("REDIS_ENABLE_TLS", 0) == 1
 	cfg.Redis.ConnectTimeout = time.Duration(GetEnvOrDefaultAsInt("REDIS_CONNECT_TIMEOUT_SECONDS", 10)) * time.Second
 	cfg.Redis.CertContent = GetEnvOrDefaultAsString("REDIS_TLS_CERT", cfg.Redis.CertContent)
 

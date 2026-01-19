@@ -18,7 +18,7 @@ redis:
   addr: "redis:6379"
   password: ""
   db: 0
-  enable_tls: true
+  enable_tls: false
   connect_timeout_seconds: 10s
   cert_content: ""
 

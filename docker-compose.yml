@@ -34,25 +34,26 @@ services:
       CHOKIDAR_USEPOLLING: "true"
       WATCHPACK_POLLING: "true"
       PUBSUB_EMULATOR_HOST: "pubsub:8085"
-      # notification-service config loader reads PROJECT_ID and PUBSUB_SUBSCRIPTION
       PROJECT_ID: "local-dodrio-project"
       PUBSUB_SUBSCRIPTION: "glo-isg-dodrio-d-notification-subscription-ddr-762"
 
-  # promo-collection:
-  #   container_name: promo-collection
-  #   build:
-  #     context: ./promo-collection
-  #     dockerfile: Dockerfile
-  #   ports:
-  #     - "8081:8080"
-  #   networks:
-  #     - devnet
-  #   restart: unless-stopped
-  #   command: ["/app/promo-collection"]
-  #   environment:
-  #     NODE_ENV: development
-  #     CHOKIDAR_USEPOLLING: "true"
-  #     WATCHPACK_POLLING: "true"
+  promo-collection:
+    container_name: promo-collection
+    build:
+      context: ./promo-collection
+      dockerfile: Dockerfile
+    ports:
+      - "8081:8081"
+    networks:
+      - devnet
+    restart: unless-stopped
+    command: ["/app/promo-collection"]
+    environment:
+      NODE_ENV: development
+      CHOKIDAR_USEPOLLING: "true"
+      WATCHPACK_POLLING: "true"
+      PUBSUB_EMULATOR_HOST: "pubsub:8085"
+      PROJECT_ID: "local-dodrio-project"
 
   # promo-collection-worker:
   #   container_name: promo-collection-worker
