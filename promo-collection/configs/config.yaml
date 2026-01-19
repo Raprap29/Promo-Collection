@@ -1,5 +1,5 @@
 server:
-  port: 8080
+  port: 8081
 
 logging:
   level: "info"
@@ -34,7 +34,7 @@ kafka:
   group_id: "dodrio_consumer_staging"
 
 pubsub:
-  project_id: "glo-isg-reloads-project-dev"
+  project_id: "local-dodrio-project"
   topic: "glo-isg-dodrio-d-promo-collection-topic-ddr729"
   notification_topic: "glo-isg-dodrio-d-notification-topic-ddr-762"
   min_backoff_seconds: 10

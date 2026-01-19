@@ -80,7 +80,7 @@ type AppConfig struct {
 func assignDefaultConfigValues(cfg *AppConfig) *AppConfig {
 
 	// server config defaults
-	cfg.Server.Port = GetEnvOrDefaultAsInt("SERVER_PORT", 8080)
+	cfg.Server.Port = GetEnvOrDefaultAsInt("SERVER_PORT", cfg.Server.Port)
 
 	// log config defaults
 	cfg.Logging.LogLevel = GetEnvOrDefaultAsString("LOGGING_LEVEL", "info")
