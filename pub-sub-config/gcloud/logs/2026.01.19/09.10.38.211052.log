@@ -1,0 +1,1452 @@
+2026-01-19 09:10:38,212 DEBUG    root            Loaded Command Group: ['gcloud', 'beta', 'emulators']
+2026-01-19 09:10:38,331 DEBUG    root            Loaded Command Group: ['gcloud', 'beta', 'emulators', 'pubsub']
+2026-01-19 09:10:38,332 DEBUG    root            Loaded Command Group: ['gcloud', 'beta', 'emulators', 'pubsub', 'start']
+2026-01-19 09:10:38,552 DEBUG    root            Failed to check metadata server: <urlopen error [Errno -2] Name or service not known>
+2026-01-19 09:10:38,552 DEBUG    root            On GCE from server: False
+2026-01-19 09:10:38,555 DEBUG    root            Running [gcloud.beta.emulators.pubsub.start] with arguments: [--host-port: "<googlecloudsdk.calliope.arg_parsers.HostPort object at 0x7ffffc7b0830>"]
+2026-01-19 09:10:38,555 DEBUG    root            Found Cloud SDK root: /google-cloud-sdk
+2026-01-19 09:10:38,555 INFO     ___FILE_ONLY___ Executing: /google-cloud-sdk/platform/pubsub-emulator/bin/cloud-pubsub-emulator --host=0.0.0.0 --port=8085
+
+2026-01-19 09:10:38,559 DEBUG    root            Chosen display Format:yaml
+2026-01-19 09:10:39,120 INFO     ___FILE_ONLY___ [pubsub] This is the Google Pub/Sub fake.
+
+2026-01-19 09:10:39,120 INFO     ___FILE_ONLY___ [pubsub] Implementation may be incomplete or differ from the real system.
+
+2026-01-19 09:10:39,226 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:39 AM com.google.cloud.pubsub.testing.v1.Main main
+
+2026-01-19 09:10:39,227 INFO     ___FILE_ONLY___ [pubsub] INFO: IAM integration is disabled. IAM policy methods and ACL checks are not supported
+
+2026-01-19 09:10:39,384 INFO     ___FILE_ONLY___ [pubsub] SLF4J(W): No SLF4J providers were found.
+
+2026-01-19 09:10:39,384 INFO     ___FILE_ONLY___ [pubsub] SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+
+2026-01-19 09:10:39,385 INFO     ___FILE_ONLY___ [pubsub] SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+
+2026-01-19 09:10:39,819 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:39 AM com.google.cloud.pubsub.testing.v1.Main main
+
+2026-01-19 09:10:39,819 INFO     ___FILE_ONLY___ [pubsub] INFO: Server started, listening on 8085
+
+2026-01-19 09:10:41,067 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:41 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+
+2026-01-19 09:10:41,068 INFO     ___FILE_ONLY___ [pubsub] INFO: Detected HTTP/2 connection.
+
+2026-01-19 09:10:41,604 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:41 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+
+2026-01-19 09:10:41,604 INFO     ___FILE_ONLY___ [pubsub] INFO: Detected HTTP/2 connection.
+
+2026-01-19 09:10:42,110 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:42 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+
+2026-01-19 09:10:42,111 INFO     ___FILE_ONLY___ [pubsub] INFO: Detected HTTP/2 connection.
+
+2026-01-19 09:10:42,112 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:42 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+
+2026-01-19 09:10:42,112 INFO     ___FILE_ONLY___ [pubsub] INFO: Detected HTTP/2 connection.
+
+2026-01-19 09:10:48,901 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:48 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+
+2026-01-19 09:10:48,902 INFO     ___FILE_ONLY___ [pubsub] INFO: Detected non-HTTP/2 connection.
+
+2026-01-19 09:10:48,938 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:48 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:48,939 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: Host
+
+2026-01-19 09:10:48,939 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:48 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:48,939 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: User-Agent
+
+2026-01-19 09:10:48,940 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:48 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:48,940 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: Accept
+
+2026-01-19 09:10:48,940 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:48 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:48,941 INFO     ___FILE_ONLY___ [pubsub] INFO: Not forwarding key: content-length
+
+2026-01-19 09:10:49,036 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+
+2026-01-19 09:10:49,036 INFO     ___FILE_ONLY___ [pubsub] INFO: Detected HTTP/2 connection.
+
+2026-01-19 09:10:49,063 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.netty.HttpHandler$1 onError
+
+2026-01-19 09:10:49,063 INFO     ___FILE_ONLY___ [pubsub] INFO: Exception when handling request: NOT_FOUND: Topic not found
+
+2026-01-19 09:10:49,094 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+
+2026-01-19 09:10:49,094 INFO     ___FILE_ONLY___ [pubsub] INFO: Detected non-HTTP/2 connection.
+
+2026-01-19 09:10:49,106 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:49,106 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: Host
+
+2026-01-19 09:10:49,107 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:49,107 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: User-Agent
+
+2026-01-19 09:10:49,107 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:49,108 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: Accept
+
+2026-01-19 09:10:49,108 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:49,108 INFO     ___FILE_ONLY___ [pubsub] INFO: Not forwarding key: content-length
+
+2026-01-19 09:10:49,176 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+
+2026-01-19 09:10:49,177 INFO     ___FILE_ONLY___ [pubsub] INFO: Detected non-HTTP/2 connection.
+
+2026-01-19 09:10:49,181 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:49,181 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: Host
+
+2026-01-19 09:10:49,182 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:49,182 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: User-Agent
+
+2026-01-19 09:10:49,182 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:49,182 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: Accept
+
+2026-01-19 09:10:49,183 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:49,183 INFO     ___FILE_ONLY___ [pubsub] INFO: Not forwarding key: content-length
+
+2026-01-19 09:10:49,188 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.netty.HttpHandler$1 onError
+
+2026-01-19 09:10:49,189 INFO     ___FILE_ONLY___ [pubsub] INFO: Exception when handling request: NOT_FOUND: Topic not found
+
+2026-01-19 09:10:49,213 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+
+2026-01-19 09:10:49,213 INFO     ___FILE_ONLY___ [pubsub] INFO: Detected non-HTTP/2 connection.
+
+2026-01-19 09:10:49,215 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:49,216 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: Host
+
+2026-01-19 09:10:49,216 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:49,218 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: User-Agent
+
+2026-01-19 09:10:49,219 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:49,219 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: Accept
+
+2026-01-19 09:10:49,219 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:49,219 INFO     ___FILE_ONLY___ [pubsub] INFO: Not forwarding key: content-length
+
+2026-01-19 09:10:49,241 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+
+2026-01-19 09:10:49,241 INFO     ___FILE_ONLY___ [pubsub] INFO: Detected non-HTTP/2 connection.
+
+2026-01-19 09:10:49,245 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:49,245 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: Host
+
+2026-01-19 09:10:49,246 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:49,246 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: User-Agent
+
+2026-01-19 09:10:49,247 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:49,247 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: Accept
+
+2026-01-19 09:10:49,247 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:49,247 INFO     ___FILE_ONLY___ [pubsub] INFO: Not forwarding key: content-length
+
+2026-01-19 09:10:49,252 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.netty.HttpHandler$1 onError
+
+2026-01-19 09:10:49,252 INFO     ___FILE_ONLY___ [pubsub] INFO: Exception when handling request: NOT_FOUND: Topic not found
+
+2026-01-19 09:10:49,271 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+
+2026-01-19 09:10:49,271 INFO     ___FILE_ONLY___ [pubsub] INFO: Detected non-HTTP/2 connection.
+
+2026-01-19 09:10:49,274 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:49,274 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: Host
+
+2026-01-19 09:10:49,275 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:49,275 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: User-Agent
+
+2026-01-19 09:10:49,275 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:49,275 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: Accept
+
+2026-01-19 09:10:49,276 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:49,276 INFO     ___FILE_ONLY___ [pubsub] INFO: Not forwarding key: content-length
+
+2026-01-19 09:10:49,301 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+
+2026-01-19 09:10:49,301 INFO     ___FILE_ONLY___ [pubsub] INFO: Detected non-HTTP/2 connection.
+
+2026-01-19 09:10:49,303 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:49,303 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: Host
+
+2026-01-19 09:10:49,303 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:49,304 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: User-Agent
+
+2026-01-19 09:10:49,304 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:49,304 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: Accept
+
+2026-01-19 09:10:49,305 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:49,305 INFO     ___FILE_ONLY___ [pubsub] INFO: Not forwarding key: content-length
+
+2026-01-19 09:10:49,311 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.netty.HttpHandler$1 onError
+
+2026-01-19 09:10:49,311 INFO     ___FILE_ONLY___ [pubsub] INFO: Exception when handling request: NOT_FOUND: Topic not found
+
+2026-01-19 09:10:49,331 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+
+2026-01-19 09:10:49,331 INFO     ___FILE_ONLY___ [pubsub] INFO: Detected non-HTTP/2 connection.
+
+2026-01-19 09:10:49,334 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:49,335 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: Host
+
+2026-01-19 09:10:49,335 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:49,336 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: User-Agent
+
+2026-01-19 09:10:49,336 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:49,336 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: Accept
+
+2026-01-19 09:10:49,337 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:49,337 INFO     ___FILE_ONLY___ [pubsub] INFO: Not forwarding key: content-length
+
+2026-01-19 09:10:49,364 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+
+2026-01-19 09:10:49,365 INFO     ___FILE_ONLY___ [pubsub] INFO: Detected non-HTTP/2 connection.
+
+2026-01-19 09:10:49,366 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:49,366 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: Host
+
+2026-01-19 09:10:49,366 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:49,366 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: User-Agent
+
+2026-01-19 09:10:49,367 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:49,367 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: Accept
+
+2026-01-19 09:10:49,367 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:49,368 INFO     ___FILE_ONLY___ [pubsub] INFO: Not forwarding key: content-length
+
+2026-01-19 09:10:49,373 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.netty.HttpHandler$1 onError
+
+2026-01-19 09:10:49,373 INFO     ___FILE_ONLY___ [pubsub] INFO: Exception when handling request: NOT_FOUND: Topic not found
+
+2026-01-19 09:10:49,393 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+
+2026-01-19 09:10:49,393 INFO     ___FILE_ONLY___ [pubsub] INFO: Detected non-HTTP/2 connection.
+
+2026-01-19 09:10:49,396 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:49,396 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: Host
+
+2026-01-19 09:10:49,396 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:49,396 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: User-Agent
+
+2026-01-19 09:10:49,397 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:49,397 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: Accept
+
+2026-01-19 09:10:49,397 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:49,398 INFO     ___FILE_ONLY___ [pubsub] INFO: Not forwarding key: content-length
+
+2026-01-19 09:10:49,418 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+
+2026-01-19 09:10:49,418 INFO     ___FILE_ONLY___ [pubsub] INFO: Detected non-HTTP/2 connection.
+
+2026-01-19 09:10:49,420 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:49,421 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: Host
+
+2026-01-19 09:10:49,421 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:49,421 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: User-Agent
+
+2026-01-19 09:10:49,421 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:49,422 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: Accept
+
+2026-01-19 09:10:49,422 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:49,422 INFO     ___FILE_ONLY___ [pubsub] INFO: Not forwarding key: content-length
+
+2026-01-19 09:10:49,426 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.netty.HttpHandler$1 onError
+
+2026-01-19 09:10:49,427 INFO     ___FILE_ONLY___ [pubsub] INFO: Exception when handling request: NOT_FOUND: Topic not found
+
+2026-01-19 09:10:49,442 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+
+2026-01-19 09:10:49,442 INFO     ___FILE_ONLY___ [pubsub] INFO: Detected non-HTTP/2 connection.
+
+2026-01-19 09:10:49,445 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:49,445 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: Host
+
+2026-01-19 09:10:49,446 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:49,447 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: User-Agent
+
+2026-01-19 09:10:49,447 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:49,447 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: Accept
+
+2026-01-19 09:10:49,448 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:49,448 INFO     ___FILE_ONLY___ [pubsub] INFO: Not forwarding key: content-length
+
+2026-01-19 09:10:49,469 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+
+2026-01-19 09:10:49,470 INFO     ___FILE_ONLY___ [pubsub] INFO: Detected non-HTTP/2 connection.
+
+2026-01-19 09:10:49,472 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:49,472 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: Host
+
+2026-01-19 09:10:49,472 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:49,473 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: User-Agent
+
+2026-01-19 09:10:49,473 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:49,473 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: Accept
+
+2026-01-19 09:10:49,474 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:49,474 INFO     ___FILE_ONLY___ [pubsub] INFO: Not forwarding key: content-length
+
+2026-01-19 09:10:49,479 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.netty.HttpHandler$1 onError
+
+2026-01-19 09:10:49,479 INFO     ___FILE_ONLY___ [pubsub] INFO: Exception when handling request: NOT_FOUND: Topic not found
+
+2026-01-19 09:10:49,496 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+
+2026-01-19 09:10:49,497 INFO     ___FILE_ONLY___ [pubsub] INFO: Detected non-HTTP/2 connection.
+
+2026-01-19 09:10:49,498 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:49,498 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: Host
+
+2026-01-19 09:10:49,498 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:49,499 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: User-Agent
+
+2026-01-19 09:10:49,499 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:49,499 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: Accept
+
+2026-01-19 09:10:49,499 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:49,500 INFO     ___FILE_ONLY___ [pubsub] INFO: Not forwarding key: content-length
+
+2026-01-19 09:10:49,527 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+
+2026-01-19 09:10:49,528 INFO     ___FILE_ONLY___ [pubsub] INFO: Detected non-HTTP/2 connection.
+
+2026-01-19 09:10:49,530 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:49,530 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: Host
+
+2026-01-19 09:10:49,531 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:49,531 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: User-Agent
+
+2026-01-19 09:10:49,531 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:49,531 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: Accept
+
+2026-01-19 09:10:49,532 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:49,532 INFO     ___FILE_ONLY___ [pubsub] INFO: Not forwarding key: content-length
+
+2026-01-19 09:10:49,538 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.netty.HttpHandler$1 onError
+
+2026-01-19 09:10:49,539 INFO     ___FILE_ONLY___ [pubsub] INFO: Exception when handling request: NOT_FOUND: Topic not found
+
+2026-01-19 09:10:49,554 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+
+2026-01-19 09:10:49,555 INFO     ___FILE_ONLY___ [pubsub] INFO: Detected non-HTTP/2 connection.
+
+2026-01-19 09:10:49,556 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:49,556 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: Host
+
+2026-01-19 09:10:49,556 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:49,556 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: User-Agent
+
+2026-01-19 09:10:49,557 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:49,557 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: Accept
+
+2026-01-19 09:10:49,557 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:49,558 INFO     ___FILE_ONLY___ [pubsub] INFO: Not forwarding key: content-length
+
+2026-01-19 09:10:49,589 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+
+2026-01-19 09:10:49,590 INFO     ___FILE_ONLY___ [pubsub] INFO: Detected non-HTTP/2 connection.
+
+2026-01-19 09:10:49,591 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:49,591 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: Host
+
+2026-01-19 09:10:49,592 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:49,592 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: User-Agent
+
+2026-01-19 09:10:49,592 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:49,592 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: Accept
+
+2026-01-19 09:10:49,593 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:49,593 INFO     ___FILE_ONLY___ [pubsub] INFO: Not forwarding key: content-length
+
+2026-01-19 09:10:49,597 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.netty.HttpHandler$1 onError
+
+2026-01-19 09:10:49,597 INFO     ___FILE_ONLY___ [pubsub] INFO: Exception when handling request: NOT_FOUND: Topic not found
+
+2026-01-19 09:10:49,616 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+
+2026-01-19 09:10:49,616 INFO     ___FILE_ONLY___ [pubsub] INFO: Detected non-HTTP/2 connection.
+
+2026-01-19 09:10:49,617 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:49,618 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: Host
+
+2026-01-19 09:10:49,618 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:49,618 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: User-Agent
+
+2026-01-19 09:10:49,618 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:49,619 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: Accept
+
+2026-01-19 09:10:49,619 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:49,619 INFO     ___FILE_ONLY___ [pubsub] INFO: Not forwarding key: content-length
+
+2026-01-19 09:10:49,643 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+
+2026-01-19 09:10:49,643 INFO     ___FILE_ONLY___ [pubsub] INFO: Detected non-HTTP/2 connection.
+
+2026-01-19 09:10:49,644 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:49,644 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: Host
+
+2026-01-19 09:10:49,644 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:49,645 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: User-Agent
+
+2026-01-19 09:10:49,645 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:49,645 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: Accept
+
+2026-01-19 09:10:49,645 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:49,646 INFO     ___FILE_ONLY___ [pubsub] INFO: Not forwarding key: content-length
+
+2026-01-19 09:10:49,649 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.netty.HttpHandler$1 onError
+
+2026-01-19 09:10:49,650 INFO     ___FILE_ONLY___ [pubsub] INFO: Exception when handling request: NOT_FOUND: Topic not found
+
+2026-01-19 09:10:49,666 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+
+2026-01-19 09:10:49,668 INFO     ___FILE_ONLY___ [pubsub] INFO: Detected non-HTTP/2 connection.
+
+2026-01-19 09:10:49,668 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:49,669 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: Host
+
+2026-01-19 09:10:49,669 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:49,669 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: User-Agent
+
+2026-01-19 09:10:49,670 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:49,670 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: Accept
+
+2026-01-19 09:10:49,670 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:49,671 INFO     ___FILE_ONLY___ [pubsub] INFO: Not forwarding key: content-length
+
+2026-01-19 09:10:49,691 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+
+2026-01-19 09:10:49,691 INFO     ___FILE_ONLY___ [pubsub] INFO: Detected non-HTTP/2 connection.
+
+2026-01-19 09:10:49,694 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:49,695 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: Host
+
+2026-01-19 09:10:49,695 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:49,695 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: User-Agent
+
+2026-01-19 09:10:49,695 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:49,696 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: Accept
+
+2026-01-19 09:10:49,696 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:49,696 INFO     ___FILE_ONLY___ [pubsub] INFO: Not forwarding key: content-length
+
+2026-01-19 09:10:49,702 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.netty.HttpHandler$1 onError
+
+2026-01-19 09:10:49,703 INFO     ___FILE_ONLY___ [pubsub] INFO: Exception when handling request: NOT_FOUND: Subscription does not exist
+
+2026-01-19 09:10:49,720 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+
+2026-01-19 09:10:49,721 INFO     ___FILE_ONLY___ [pubsub] INFO: Detected non-HTTP/2 connection.
+
+2026-01-19 09:10:49,737 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:49,738 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: Host
+
+2026-01-19 09:10:49,738 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:49,738 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: User-Agent
+
+2026-01-19 09:10:49,739 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:49,739 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: Accept
+
+2026-01-19 09:10:49,739 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:49,739 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: Content-Type
+
+2026-01-19 09:10:49,740 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:49,740 INFO     ___FILE_ONLY___ [pubsub] INFO: Not forwarding key: Content-Length
+
+2026-01-19 09:10:49,781 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+
+2026-01-19 09:10:49,782 INFO     ___FILE_ONLY___ [pubsub] INFO: Detected non-HTTP/2 connection.
+
+2026-01-19 09:10:49,783 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:49,783 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: Host
+
+2026-01-19 09:10:49,784 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:49,784 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: User-Agent
+
+2026-01-19 09:10:49,784 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:49,784 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: Accept
+
+2026-01-19 09:10:49,785 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:49,785 INFO     ___FILE_ONLY___ [pubsub] INFO: Not forwarding key: content-length
+
+2026-01-19 09:10:49,787 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.netty.HttpHandler$1 onError
+
+2026-01-19 09:10:49,787 INFO     ___FILE_ONLY___ [pubsub] INFO: Exception when handling request: NOT_FOUND: Subscription does not exist
+
+2026-01-19 09:10:49,805 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+
+2026-01-19 09:10:49,806 INFO     ___FILE_ONLY___ [pubsub] INFO: Detected non-HTTP/2 connection.
+
+2026-01-19 09:10:49,807 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:49,807 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: Host
+
+2026-01-19 09:10:49,807 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:49,808 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: User-Agent
+
+2026-01-19 09:10:49,808 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:49,808 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: Accept
+
+2026-01-19 09:10:49,808 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:49,808 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: Content-Type
+
+2026-01-19 09:10:49,809 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:49,809 INFO     ___FILE_ONLY___ [pubsub] INFO: Not forwarding key: Content-Length
+
+2026-01-19 09:10:49,831 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+
+2026-01-19 09:10:49,831 INFO     ___FILE_ONLY___ [pubsub] INFO: Detected non-HTTP/2 connection.
+
+2026-01-19 09:10:49,832 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:49,833 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: Host
+
+2026-01-19 09:10:49,833 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:49,833 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: User-Agent
+
+2026-01-19 09:10:49,833 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:49,834 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: Accept
+
+2026-01-19 09:10:49,834 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:49,834 INFO     ___FILE_ONLY___ [pubsub] INFO: Not forwarding key: content-length
+
+2026-01-19 09:10:49,838 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.netty.HttpHandler$1 onError
+
+2026-01-19 09:10:49,838 INFO     ___FILE_ONLY___ [pubsub] INFO: Exception when handling request: NOT_FOUND: Subscription does not exist
+
+2026-01-19 09:10:49,855 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+
+2026-01-19 09:10:49,855 INFO     ___FILE_ONLY___ [pubsub] INFO: Detected non-HTTP/2 connection.
+
+2026-01-19 09:10:49,856 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:49,856 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: Host
+
+2026-01-19 09:10:49,856 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:49,857 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: User-Agent
+
+2026-01-19 09:10:49,857 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:49,857 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: Accept
+
+2026-01-19 09:10:49,858 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:49,858 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: Content-Type
+
+2026-01-19 09:10:49,858 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:49,858 INFO     ___FILE_ONLY___ [pubsub] INFO: Not forwarding key: Content-Length
+
+2026-01-19 09:10:49,877 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+
+2026-01-19 09:10:49,877 INFO     ___FILE_ONLY___ [pubsub] INFO: Detected non-HTTP/2 connection.
+
+2026-01-19 09:10:49,878 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:49,879 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: Host
+
+2026-01-19 09:10:49,879 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:49,879 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: User-Agent
+
+2026-01-19 09:10:49,880 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:49,880 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: Accept
+
+2026-01-19 09:10:49,880 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:49,880 INFO     ___FILE_ONLY___ [pubsub] INFO: Not forwarding key: content-length
+
+2026-01-19 09:10:49,885 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.netty.HttpHandler$1 onError
+
+2026-01-19 09:10:49,885 INFO     ___FILE_ONLY___ [pubsub] INFO: Exception when handling request: NOT_FOUND: Subscription does not exist
+
+2026-01-19 09:10:49,900 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+
+2026-01-19 09:10:49,900 INFO     ___FILE_ONLY___ [pubsub] INFO: Detected non-HTTP/2 connection.
+
+2026-01-19 09:10:49,902 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:49,902 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: Host
+
+2026-01-19 09:10:49,902 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:49,903 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: User-Agent
+
+2026-01-19 09:10:49,903 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:49,903 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: Accept
+
+2026-01-19 09:10:49,904 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:49,904 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: Content-Type
+
+2026-01-19 09:10:49,904 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:49,904 INFO     ___FILE_ONLY___ [pubsub] INFO: Not forwarding key: Content-Length
+
+2026-01-19 09:10:49,923 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+
+2026-01-19 09:10:49,924 INFO     ___FILE_ONLY___ [pubsub] INFO: Detected non-HTTP/2 connection.
+
+2026-01-19 09:10:49,924 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:49,924 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: Host
+
+2026-01-19 09:10:49,925 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:49,925 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: User-Agent
+
+2026-01-19 09:10:49,925 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:49,926 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: Accept
+
+2026-01-19 09:10:49,926 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:49,926 INFO     ___FILE_ONLY___ [pubsub] INFO: Not forwarding key: content-length
+
+2026-01-19 09:10:49,929 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.netty.HttpHandler$1 onError
+
+2026-01-19 09:10:49,929 INFO     ___FILE_ONLY___ [pubsub] INFO: Exception when handling request: NOT_FOUND: Subscription does not exist
+
+2026-01-19 09:10:49,944 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+
+2026-01-19 09:10:49,944 INFO     ___FILE_ONLY___ [pubsub] INFO: Detected non-HTTP/2 connection.
+
+2026-01-19 09:10:49,946 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:49,946 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: Host
+
+2026-01-19 09:10:49,947 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:49,947 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: User-Agent
+
+2026-01-19 09:10:49,947 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:49,948 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: Accept
+
+2026-01-19 09:10:49,948 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:49,948 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: Content-Type
+
+2026-01-19 09:10:49,948 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:49,949 INFO     ___FILE_ONLY___ [pubsub] INFO: Not forwarding key: Content-Length
+
+2026-01-19 09:10:49,975 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+
+2026-01-19 09:10:49,975 INFO     ___FILE_ONLY___ [pubsub] INFO: Detected non-HTTP/2 connection.
+
+2026-01-19 09:10:49,976 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:49,977 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: Host
+
+2026-01-19 09:10:49,977 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:49,977 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: User-Agent
+
+2026-01-19 09:10:49,979 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:49,979 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: Accept
+
+2026-01-19 09:10:49,980 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:49,980 INFO     ___FILE_ONLY___ [pubsub] INFO: Not forwarding key: content-length
+
+2026-01-19 09:10:49,981 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.netty.HttpHandler$1 onError
+
+2026-01-19 09:10:49,982 INFO     ___FILE_ONLY___ [pubsub] INFO: Exception when handling request: NOT_FOUND: Subscription does not exist
+
+2026-01-19 09:10:49,998 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:49 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+
+2026-01-19 09:10:49,998 INFO     ___FILE_ONLY___ [pubsub] INFO: Detected non-HTTP/2 connection.
+
+2026-01-19 09:10:50,002 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:50 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:50,003 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: Host
+
+2026-01-19 09:10:50,003 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:50 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:50,003 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: User-Agent
+
+2026-01-19 09:10:50,004 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:50 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:50,004 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: Accept
+
+2026-01-19 09:10:50,005 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:50 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:50,005 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: Content-Type
+
+2026-01-19 09:10:50,006 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:50 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:50,006 INFO     ___FILE_ONLY___ [pubsub] INFO: Not forwarding key: Content-Length
+
+2026-01-19 09:10:50,025 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:50 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+
+2026-01-19 09:10:50,025 INFO     ___FILE_ONLY___ [pubsub] INFO: Detected non-HTTP/2 connection.
+
+2026-01-19 09:10:50,028 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:50 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:50,028 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: Host
+
+2026-01-19 09:10:50,028 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:50 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:50,029 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: User-Agent
+
+2026-01-19 09:10:50,029 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:50 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:50,029 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: Accept
+
+2026-01-19 09:10:50,030 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:50 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:50,030 INFO     ___FILE_ONLY___ [pubsub] INFO: Not forwarding key: content-length
+
+2026-01-19 09:10:50,033 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:50 AM io.gapi.emulators.netty.HttpHandler$1 onError
+
+2026-01-19 09:10:50,034 INFO     ___FILE_ONLY___ [pubsub] INFO: Exception when handling request: NOT_FOUND: Subscription does not exist
+
+2026-01-19 09:10:50,049 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:50 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+
+2026-01-19 09:10:50,049 INFO     ___FILE_ONLY___ [pubsub] INFO: Detected non-HTTP/2 connection.
+
+2026-01-19 09:10:50,050 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:50 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:50,051 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: Host
+
+2026-01-19 09:10:50,051 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:50 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:50,051 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: User-Agent
+
+2026-01-19 09:10:50,051 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:50 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:50,052 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: Accept
+
+2026-01-19 09:10:50,052 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:50 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:50,052 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: Content-Type
+
+2026-01-19 09:10:50,052 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:50 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:50,053 INFO     ___FILE_ONLY___ [pubsub] INFO: Not forwarding key: Content-Length
+
+2026-01-19 09:10:50,101 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:50 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+
+2026-01-19 09:10:50,102 INFO     ___FILE_ONLY___ [pubsub] INFO: Detected non-HTTP/2 connection.
+
+2026-01-19 09:10:50,120 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:50 AM io.netty.util.ResourceLeakDetector reportTracedLeak
+
+2026-01-19 09:10:50,120 INFO     ___FILE_ONLY___ [pubsub] SEVERE: LEAK: ByteBuf.release() was not called before it's garbage-collected. See https://netty.io/wiki/reference-counted-objects.html for more information.
+
+2026-01-19 09:10:50,120 INFO     ___FILE_ONLY___ [pubsub] Recent access records:
+
+2026-01-19 09:10:50,121 INFO     ___FILE_ONLY___ [pubsub] Created at:
+
+2026-01-19 09:10:50,121 INFO     ___FILE_ONLY___ [pubsub] 	io.netty.buffer.PooledByteBufAllocator.newDirectBuffer(PooledByteBufAllocator.java:410)
+
+2026-01-19 09:10:50,121 INFO     ___FILE_ONLY___ [pubsub] 	io.netty.buffer.AbstractByteBufAllocator.directBuffer(AbstractByteBufAllocator.java:188)
+
+2026-01-19 09:10:50,122 INFO     ___FILE_ONLY___ [pubsub] 	io.netty.buffer.AbstractByteBufAllocator.directBuffer(AbstractByteBufAllocator.java:179)
+
+2026-01-19 09:10:50,122 INFO     ___FILE_ONLY___ [pubsub] 	io.netty.buffer.CompositeByteBuf.allocBuffer(CompositeByteBuf.java:1879)
+
+2026-01-19 09:10:50,122 INFO     ___FILE_ONLY___ [pubsub] 	io.netty.buffer.CompositeByteBuf.copy(CompositeByteBuf.java:1524)
+
+2026-01-19 09:10:50,122 INFO     ___FILE_ONLY___ [pubsub] 	io.netty.buffer.AbstractByteBuf.copy(AbstractByteBuf.java:1194)
+
+2026-01-19 09:10:50,123 INFO     ___FILE_ONLY___ [pubsub] 	io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler.handle(HttpAdapter.java:557)
+
+2026-01-19 09:10:50,123 INFO     ___FILE_ONLY___ [pubsub] 	io.gapi.emulators.grpc.HttpAdapter$UnaryMethodHandler.handle(HttpAdapter.java:641)
+
+2026-01-19 09:10:50,123 INFO     ___FILE_ONLY___ [pubsub] 	io.gapi.emulators.grpc.HttpAdapter.handleRequest(HttpAdapter.java:219)
+
+2026-01-19 09:10:50,123 INFO     ___FILE_ONLY___ [pubsub] 	io.gapi.emulators.netty.HttpHandler.channelRead(HttpHandler.java:52)
+
+2026-01-19 09:10:50,124 INFO     ___FILE_ONLY___ [pubsub] 	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:442)
+
+2026-01-19 09:10:50,124 INFO     ___FILE_ONLY___ [pubsub] 	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+
+2026-01-19 09:10:50,124 INFO     ___FILE_ONLY___ [pubsub] 	io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+
+2026-01-19 09:10:50,124 INFO     ___FILE_ONLY___ [pubsub] 	io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:107)
+
+2026-01-19 09:10:50,125 INFO     ___FILE_ONLY___ [pubsub] 	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+
+2026-01-19 09:10:50,125 INFO     ___FILE_ONLY___ [pubsub] 	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+
+2026-01-19 09:10:50,125 INFO     ___FILE_ONLY___ [pubsub] 	io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+
+2026-01-19 09:10:50,125 INFO     ___FILE_ONLY___ [pubsub] 	io.netty.handler.codec.http.HttpContentDecoder.decode(HttpContentDecoder.java:166)
+
+2026-01-19 09:10:50,126 INFO     ___FILE_ONLY___ [pubsub] 	io.netty.handler.codec.http.HttpContentDecoder.decode(HttpContentDecoder.java:48)
+
+2026-01-19 09:10:50,126 INFO     ___FILE_ONLY___ [pubsub] 	io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:91)
+
+2026-01-19 09:10:50,126 INFO     ___FILE_ONLY___ [pubsub] 	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+
+2026-01-19 09:10:50,127 INFO     ___FILE_ONLY___ [pubsub] 	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+
+2026-01-19 09:10:50,127 INFO     ___FILE_ONLY___ [pubsub] 	io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+
+2026-01-19 09:10:50,127 INFO     ___FILE_ONLY___ [pubsub] 	io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:346)
+
+2026-01-19 09:10:50,127 INFO     ___FILE_ONLY___ [pubsub] 	io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:318)
+
+2026-01-19 09:10:50,128 INFO     ___FILE_ONLY___ [pubsub] 	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+
+2026-01-19 09:10:50,128 INFO     ___FILE_ONLY___ [pubsub] 	io.netty.channel.AbstractChannelHandlerContext.access$600(AbstractChannelHandlerContext.java:61)
+
+2026-01-19 09:10:50,128 INFO     ___FILE_ONLY___ [pubsub] 	io.netty.channel.AbstractChannelHandlerContext$7.run(AbstractChannelHandlerContext.java:425)
+
+2026-01-19 09:10:50,129 INFO     ___FILE_ONLY___ [pubsub] 	io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java:173)
+
+2026-01-19 09:10:50,129 INFO     ___FILE_ONLY___ [pubsub] 	io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:166)
+
+2026-01-19 09:10:50,129 INFO     ___FILE_ONLY___ [pubsub] 	io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:472)
+
+2026-01-19 09:10:50,129 INFO     ___FILE_ONLY___ [pubsub] 	io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:569)
+
+2026-01-19 09:10:50,130 INFO     ___FILE_ONLY___ [pubsub] 	io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:998)
+
+2026-01-19 09:10:50,130 INFO     ___FILE_ONLY___ [pubsub] 	io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+
+2026-01-19 09:10:50,130 INFO     ___FILE_ONLY___ [pubsub] 	java.base/java.lang.Thread.run(Thread.java:1583)
+
+2026-01-19 09:10:50,130 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:50 AM io.netty.util.ResourceLeakDetector reportTracedLeak
+
+2026-01-19 09:10:50,131 INFO     ___FILE_ONLY___ [pubsub] SEVERE: LEAK: ByteBuf.release() was not called before it's garbage-collected. See https://netty.io/wiki/reference-counted-objects.html for more information.
+
+2026-01-19 09:10:50,131 INFO     ___FILE_ONLY___ [pubsub] Recent access records:
+
+2026-01-19 09:10:50,131 INFO     ___FILE_ONLY___ [pubsub] Created at:
+
+2026-01-19 09:10:50,131 INFO     ___FILE_ONLY___ [pubsub] 	io.netty.buffer.UnpooledByteBufAllocator.newDirectBuffer(UnpooledByteBufAllocator.java:96)
+
+2026-01-19 09:10:50,132 INFO     ___FILE_ONLY___ [pubsub] 	io.netty.buffer.AbstractByteBufAllocator.directBuffer(AbstractByteBufAllocator.java:188)
+
+2026-01-19 09:10:50,132 INFO     ___FILE_ONLY___ [pubsub] 	io.netty.buffer.AbstractByteBufAllocator.directBuffer(AbstractByteBufAllocator.java:174)
+
+2026-01-19 09:10:50,132 INFO     ___FILE_ONLY___ [pubsub] 	io.netty.buffer.Unpooled.directBuffer(Unpooled.java:110)
+
+2026-01-19 09:10:50,132 INFO     ___FILE_ONLY___ [pubsub] 	io.gapi.emulators.netty.HttpVersionRoutingHandler.<init>(HttpVersionRoutingHandler.java:57)
+
+2026-01-19 09:10:50,132 INFO     ___FILE_ONLY___ [pubsub] 	io.gapi.emulators.grpc.GrpcServer$1.initChannel(GrpcServer.java:185)
+
+2026-01-19 09:10:50,133 INFO     ___FILE_ONLY___ [pubsub] 	io.netty.channel.ChannelInitializer.initChannel(ChannelInitializer.java:129)
+
+2026-01-19 09:10:50,133 INFO     ___FILE_ONLY___ [pubsub] 	io.netty.channel.ChannelInitializer.handlerAdded(ChannelInitializer.java:112)
+
+2026-01-19 09:10:50,134 INFO     ___FILE_ONLY___ [pubsub] 	io.netty.channel.AbstractChannelHandlerContext.callHandlerAdded(AbstractChannelHandlerContext.java:1130)
+
+2026-01-19 09:10:50,134 INFO     ___FILE_ONLY___ [pubsub] 	io.netty.channel.DefaultChannelPipeline.callHandlerAdded0(DefaultChannelPipeline.java:558)
+
+2026-01-19 09:10:50,134 INFO     ___FILE_ONLY___ [pubsub] 	io.netty.channel.DefaultChannelPipeline.access$100(DefaultChannelPipeline.java:45)
+
+2026-01-19 09:10:50,134 INFO     ___FILE_ONLY___ [pubsub] 	io.netty.channel.DefaultChannelPipeline$PendingHandlerAddedTask.execute(DefaultChannelPipeline.java:1410)
+
+2026-01-19 09:10:50,135 INFO     ___FILE_ONLY___ [pubsub] 	io.netty.channel.DefaultChannelPipeline.callHandlerAddedForAllHandlers(DefaultChannelPipeline.java:1064)
+
+2026-01-19 09:10:50,135 INFO     ___FILE_ONLY___ [pubsub] 	io.netty.channel.DefaultChannelPipeline.invokeHandlerAddedIfNeeded(DefaultChannelPipeline.java:599)
+
+2026-01-19 09:10:50,135 INFO     ___FILE_ONLY___ [pubsub] 	io.netty.channel.AbstractChannel$AbstractUnsafe.register0(AbstractChannel.java:513)
+
+2026-01-19 09:10:50,135 INFO     ___FILE_ONLY___ [pubsub] 	io.netty.channel.AbstractChannel$AbstractUnsafe.access$200(AbstractChannel.java:428)
+
+2026-01-19 09:10:50,135 INFO     ___FILE_ONLY___ [pubsub] 	io.netty.channel.AbstractChannel$AbstractUnsafe$1.run(AbstractChannel.java:485)
+
+2026-01-19 09:10:50,136 INFO     ___FILE_ONLY___ [pubsub] 	io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java:173)
+
+2026-01-19 09:10:50,136 INFO     ___FILE_ONLY___ [pubsub] 	io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:166)
+
+2026-01-19 09:10:50,136 INFO     ___FILE_ONLY___ [pubsub] 	io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:472)
+
+2026-01-19 09:10:50,137 INFO     ___FILE_ONLY___ [pubsub] 	io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:569)
+
+2026-01-19 09:10:50,137 INFO     ___FILE_ONLY___ [pubsub] 	io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:998)
+
+2026-01-19 09:10:50,137 INFO     ___FILE_ONLY___ [pubsub] 	io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+
+2026-01-19 09:10:50,137 INFO     ___FILE_ONLY___ [pubsub] 	io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+
+2026-01-19 09:10:50,137 INFO     ___FILE_ONLY___ [pubsub] 	java.base/java.lang.Thread.run(Thread.java:1583)
+
+2026-01-19 09:10:50,138 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:50 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:50,138 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: Host
+
+2026-01-19 09:10:50,138 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:50 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:50,138 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: User-Agent
+
+2026-01-19 09:10:50,138 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:50 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:50,139 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: Accept
+
+2026-01-19 09:10:50,139 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:50 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:50,139 INFO     ___FILE_ONLY___ [pubsub] INFO: Not forwarding key: content-length
+
+2026-01-19 09:10:50,142 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:50 AM io.gapi.emulators.netty.HttpHandler$1 onError
+
+2026-01-19 09:10:50,142 INFO     ___FILE_ONLY___ [pubsub] INFO: Exception when handling request: NOT_FOUND: Subscription does not exist
+
+2026-01-19 09:10:50,160 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:50 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+
+2026-01-19 09:10:50,160 INFO     ___FILE_ONLY___ [pubsub] INFO: Detected non-HTTP/2 connection.
+
+2026-01-19 09:10:50,161 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:50 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:50,161 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: Host
+
+2026-01-19 09:10:50,162 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:50 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:50,162 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: User-Agent
+
+2026-01-19 09:10:50,162 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:50 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:50,162 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: Accept
+
+2026-01-19 09:10:50,163 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:50 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:50,163 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: Content-Type
+
+2026-01-19 09:10:50,163 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:50 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:50,163 INFO     ___FILE_ONLY___ [pubsub] INFO: Not forwarding key: Content-Length
+
+2026-01-19 09:10:50,189 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:50 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+
+2026-01-19 09:10:50,189 INFO     ___FILE_ONLY___ [pubsub] INFO: Detected non-HTTP/2 connection.
+
+2026-01-19 09:10:50,190 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:50 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:50,190 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: Host
+
+2026-01-19 09:10:50,190 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:50 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:50,190 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: User-Agent
+
+2026-01-19 09:10:50,191 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:50 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:50,191 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: Accept
+
+2026-01-19 09:10:50,191 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:50 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:50,191 INFO     ___FILE_ONLY___ [pubsub] INFO: Not forwarding key: content-length
+
+2026-01-19 09:10:50,195 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:50 AM io.gapi.emulators.netty.HttpHandler$1 onError
+
+2026-01-19 09:10:50,196 INFO     ___FILE_ONLY___ [pubsub] INFO: Exception when handling request: NOT_FOUND: Subscription does not exist
+
+2026-01-19 09:10:50,213 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:50 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+
+2026-01-19 09:10:50,213 INFO     ___FILE_ONLY___ [pubsub] INFO: Detected non-HTTP/2 connection.
+
+2026-01-19 09:10:50,214 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:50 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:50,214 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: Host
+
+2026-01-19 09:10:50,215 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:50 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:50,215 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: User-Agent
+
+2026-01-19 09:10:50,215 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:50 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:50,215 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: Accept
+
+2026-01-19 09:10:50,216 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:50 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:50,216 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: Content-Type
+
+2026-01-19 09:10:50,216 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:10:50 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:10:50,217 INFO     ___FILE_ONLY___ [pubsub] INFO: Not forwarding key: Content-Length
+
+2026-01-19 09:12:12,435 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:12:12 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+
+2026-01-19 09:12:12,438 INFO     ___FILE_ONLY___ [pubsub] INFO: Detected non-HTTP/2 connection.
+
+2026-01-19 09:12:12,439 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:12:12 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:12:12,439 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: Host
+
+2026-01-19 09:12:12,440 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:12:12 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:12:12,440 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: User-Agent
+
+2026-01-19 09:12:12,441 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:12:12 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:12:12,441 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: Accept
+
+2026-01-19 09:12:12,442 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:12:12 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:12:12,442 INFO     ___FILE_ONLY___ [pubsub] INFO: Not forwarding key: content-length
+
+2026-01-19 09:12:12,479 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:12:12 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+
+2026-01-19 09:12:12,480 INFO     ___FILE_ONLY___ [pubsub] INFO: Detected non-HTTP/2 connection.
+
+2026-01-19 09:12:12,480 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:12:12 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:12:12,481 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: Host
+
+2026-01-19 09:12:12,481 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:12:12 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:12:12,482 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: User-Agent
+
+2026-01-19 09:12:12,482 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:12:12 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:12:12,482 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: Accept
+
+2026-01-19 09:12:12,482 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:12:12 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:12:12,483 INFO     ___FILE_ONLY___ [pubsub] INFO: Not forwarding key: content-length
+
+2026-01-19 09:12:12,503 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:12:12 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+
+2026-01-19 09:12:12,504 INFO     ___FILE_ONLY___ [pubsub] INFO: Detected non-HTTP/2 connection.
+
+2026-01-19 09:12:12,504 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:12:12 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:12:12,504 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: Host
+
+2026-01-19 09:12:12,505 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:12:12 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:12:12,505 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: User-Agent
+
+2026-01-19 09:12:12,505 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:12:12 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:12:12,506 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: Accept
+
+2026-01-19 09:12:12,506 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:12:12 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:12:12,506 INFO     ___FILE_ONLY___ [pubsub] INFO: Not forwarding key: content-length
+
+2026-01-19 09:12:12,527 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:12:12 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+
+2026-01-19 09:12:12,527 INFO     ___FILE_ONLY___ [pubsub] INFO: Detected non-HTTP/2 connection.
+
+2026-01-19 09:12:12,528 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:12:12 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:12:12,529 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: Host
+
+2026-01-19 09:12:12,529 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:12:12 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:12:12,530 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: User-Agent
+
+2026-01-19 09:12:12,530 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:12:12 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:12:12,530 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: Accept
+
+2026-01-19 09:12:12,531 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:12:12 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:12:12,532 INFO     ___FILE_ONLY___ [pubsub] INFO: Not forwarding key: content-length
+
+2026-01-19 09:12:12,555 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:12:12 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+
+2026-01-19 09:12:12,556 INFO     ___FILE_ONLY___ [pubsub] INFO: Detected non-HTTP/2 connection.
+
+2026-01-19 09:12:12,557 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:12:12 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:12:12,557 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: Host
+
+2026-01-19 09:12:12,557 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:12:12 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:12:12,557 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: User-Agent
+
+2026-01-19 09:12:12,558 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:12:12 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:12:12,558 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: Accept
+
+2026-01-19 09:12:12,559 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:12:12 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:12:12,559 INFO     ___FILE_ONLY___ [pubsub] INFO: Not forwarding key: content-length
+
+2026-01-19 09:12:12,582 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:12:12 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+
+2026-01-19 09:12:12,583 INFO     ___FILE_ONLY___ [pubsub] INFO: Detected non-HTTP/2 connection.
+
+2026-01-19 09:12:12,584 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:12:12 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:12:12,585 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: Host
+
+2026-01-19 09:12:12,585 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:12:12 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:12:12,585 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: User-Agent
+
+2026-01-19 09:12:12,586 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:12:12 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:12:12,586 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: Accept
+
+2026-01-19 09:12:12,586 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:12:12 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:12:12,586 INFO     ___FILE_ONLY___ [pubsub] INFO: Not forwarding key: content-length
+
+2026-01-19 09:12:12,609 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:12:12 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+
+2026-01-19 09:12:12,610 INFO     ___FILE_ONLY___ [pubsub] INFO: Detected non-HTTP/2 connection.
+
+2026-01-19 09:12:12,612 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:12:12 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:12:12,612 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: Host
+
+2026-01-19 09:12:12,612 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:12:12 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:12:12,612 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: User-Agent
+
+2026-01-19 09:12:12,613 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:12:12 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:12:12,613 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: Accept
+
+2026-01-19 09:12:12,613 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:12:12 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:12:12,613 INFO     ___FILE_ONLY___ [pubsub] INFO: Not forwarding key: content-length
+
+2026-01-19 09:12:12,637 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:12:12 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+
+2026-01-19 09:12:12,638 INFO     ___FILE_ONLY___ [pubsub] INFO: Detected non-HTTP/2 connection.
+
+2026-01-19 09:12:12,639 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:12:12 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:12:12,639 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: Host
+
+2026-01-19 09:12:12,640 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:12:12 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:12:12,640 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: User-Agent
+
+2026-01-19 09:12:12,640 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:12:12 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:12:12,641 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: Accept
+
+2026-01-19 09:12:12,641 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:12:12 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:12:12,641 INFO     ___FILE_ONLY___ [pubsub] INFO: Not forwarding key: content-length
+
+2026-01-19 09:12:12,667 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:12:12 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+
+2026-01-19 09:12:12,667 INFO     ___FILE_ONLY___ [pubsub] INFO: Detected non-HTTP/2 connection.
+
+2026-01-19 09:12:12,668 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:12:12 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:12:12,668 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: Host
+
+2026-01-19 09:12:12,669 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:12:12 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:12:12,670 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: User-Agent
+
+2026-01-19 09:12:12,670 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:12:12 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:12:12,670 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: Accept
+
+2026-01-19 09:12:12,671 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:12:12 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:12:12,671 INFO     ___FILE_ONLY___ [pubsub] INFO: Not forwarding key: content-length
+
+2026-01-19 09:12:12,691 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:12:12 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+
+2026-01-19 09:12:12,691 INFO     ___FILE_ONLY___ [pubsub] INFO: Detected non-HTTP/2 connection.
+
+2026-01-19 09:12:12,692 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:12:12 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:12:12,693 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: Host
+
+2026-01-19 09:12:12,693 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:12:12 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:12:12,693 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: User-Agent
+
+2026-01-19 09:12:12,693 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:12:12 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:12:12,694 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: Accept
+
+2026-01-19 09:12:12,694 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:12:12 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:12:12,694 INFO     ___FILE_ONLY___ [pubsub] INFO: Not forwarding key: content-length
+
+2026-01-19 09:12:12,718 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:12:12 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+
+2026-01-19 09:12:12,718 INFO     ___FILE_ONLY___ [pubsub] INFO: Detected non-HTTP/2 connection.
+
+2026-01-19 09:12:12,720 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:12:12 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:12:12,720 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: Host
+
+2026-01-19 09:12:12,721 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:12:12 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:12:12,721 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: User-Agent
+
+2026-01-19 09:12:12,721 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:12:12 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:12:12,722 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: Accept
+
+2026-01-19 09:12:12,722 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:12:12 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:12:12,722 INFO     ___FILE_ONLY___ [pubsub] INFO: Not forwarding key: content-length
+
+2026-01-19 09:12:12,744 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:12:12 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+
+2026-01-19 09:12:12,745 INFO     ___FILE_ONLY___ [pubsub] INFO: Detected non-HTTP/2 connection.
+
+2026-01-19 09:12:12,745 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:12:12 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:12:12,746 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: Host
+
+2026-01-19 09:12:12,746 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:12:12 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:12:12,746 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: User-Agent
+
+2026-01-19 09:12:12,746 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:12:12 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:12:12,746 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: Accept
+
+2026-01-19 09:12:12,747 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:12:12 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:12:12,747 INFO     ___FILE_ONLY___ [pubsub] INFO: Not forwarding key: content-length
+
+2026-01-19 09:12:12,777 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:12:12 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+
+2026-01-19 09:12:12,777 INFO     ___FILE_ONLY___ [pubsub] INFO: Detected non-HTTP/2 connection.
+
+2026-01-19 09:12:12,779 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:12:12 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:12:12,780 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: Host
+
+2026-01-19 09:12:12,781 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:12:12 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:12:12,781 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: User-Agent
+
+2026-01-19 09:12:12,781 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:12:12 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:12:12,782 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: Accept
+
+2026-01-19 09:12:12,782 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:12:12 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:12:12,782 INFO     ___FILE_ONLY___ [pubsub] INFO: Not forwarding key: content-length
+
+2026-01-19 09:12:12,806 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:12:12 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+
+2026-01-19 09:12:12,806 INFO     ___FILE_ONLY___ [pubsub] INFO: Detected non-HTTP/2 connection.
+
+2026-01-19 09:12:12,807 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:12:12 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:12:12,807 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: Host
+
+2026-01-19 09:12:12,807 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:12:12 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:12:12,807 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: User-Agent
+
+2026-01-19 09:12:12,808 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:12:12 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:12:12,808 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: Accept
+
+2026-01-19 09:12:12,808 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:12:12 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:12:12,808 INFO     ___FILE_ONLY___ [pubsub] INFO: Not forwarding key: content-length
+
+2026-01-19 09:12:12,834 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:12:12 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+
+2026-01-19 09:12:12,835 INFO     ___FILE_ONLY___ [pubsub] INFO: Detected non-HTTP/2 connection.
+
+2026-01-19 09:12:12,836 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:12:12 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:12:12,836 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: Host
+
+2026-01-19 09:12:12,836 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:12:12 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:12:12,837 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: User-Agent
+
+2026-01-19 09:12:12,837 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:12:12 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:12:12,837 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: Accept
+
+2026-01-19 09:12:12,837 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:12:12 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:12:12,838 INFO     ___FILE_ONLY___ [pubsub] INFO: Not forwarding key: content-length
+
+2026-01-19 09:12:12,859 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:12:12 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+
+2026-01-19 09:12:12,859 INFO     ___FILE_ONLY___ [pubsub] INFO: Detected non-HTTP/2 connection.
+
+2026-01-19 09:12:12,861 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:12:12 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:12:12,861 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: Host
+
+2026-01-19 09:12:12,862 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:12:12 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:12:12,862 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: User-Agent
+
+2026-01-19 09:12:12,862 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:12:12 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:12:12,862 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: Accept
+
+2026-01-19 09:12:12,863 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:12:12 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:12:12,863 INFO     ___FILE_ONLY___ [pubsub] INFO: Not forwarding key: content-length
+
+2026-01-19 09:12:12,885 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:12:12 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+
+2026-01-19 09:12:12,886 INFO     ___FILE_ONLY___ [pubsub] INFO: Detected non-HTTP/2 connection.
+
+2026-01-19 09:12:12,888 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:12:12 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:12:12,888 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: Host
+
+2026-01-19 09:12:12,888 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:12:12 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:12:12,888 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: User-Agent
+
+2026-01-19 09:12:12,889 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:12:12 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:12:12,889 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: Accept
+
+2026-01-19 09:12:12,889 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:12:12 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:12:12,890 INFO     ___FILE_ONLY___ [pubsub] INFO: Not forwarding key: content-length
+
+2026-01-19 09:12:12,912 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:12:12 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+
+2026-01-19 09:12:12,912 INFO     ___FILE_ONLY___ [pubsub] INFO: Detected non-HTTP/2 connection.
+
+2026-01-19 09:12:12,913 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:12:12 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:12:12,915 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: Host
+
+2026-01-19 09:12:12,915 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:12:12 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:12:12,916 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: User-Agent
+
+2026-01-19 09:12:12,916 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:12:12 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:12:12,916 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: Accept
+
+2026-01-19 09:12:12,917 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:12:12 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:12:12,917 INFO     ___FILE_ONLY___ [pubsub] INFO: Not forwarding key: content-length
+
+2026-01-19 09:12:12,932 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:12:12 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+
+2026-01-19 09:12:12,932 INFO     ___FILE_ONLY___ [pubsub] INFO: Detected non-HTTP/2 connection.
+
+2026-01-19 09:12:12,934 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:12:12 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:12:12,934 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: Host
+
+2026-01-19 09:12:12,934 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:12:12 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:12:12,935 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: User-Agent
+
+2026-01-19 09:12:12,935 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:12:12 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:12:12,935 INFO     ___FILE_ONLY___ [pubsub] INFO: Forwarding key: Accept
+
+2026-01-19 09:12:12,935 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:12:12 AM io.gapi.emulators.grpc.HttpAdapter$StubMethodHandler handle
+
+2026-01-19 09:12:12,936 INFO     ___FILE_ONLY___ [pubsub] INFO: Not forwarding key: content-length
+
+2026-01-19 09:12:22,793 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:12:22 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+
+2026-01-19 09:12:22,794 INFO     ___FILE_ONLY___ [pubsub] INFO: Detected HTTP/2 connection.
+
+2026-01-19 09:12:22,794 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:12:22 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+
+2026-01-19 09:12:22,795 INFO     ___FILE_ONLY___ [pubsub] INFO: Detected HTTP/2 connection.
+
+2026-01-19 09:12:24,662 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:12:24 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+
+2026-01-19 09:12:24,663 INFO     ___FILE_ONLY___ [pubsub] INFO: Detected HTTP/2 connection.
+
+2026-01-19 09:12:24,663 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:12:24 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+
+2026-01-19 09:12:24,664 INFO     ___FILE_ONLY___ [pubsub] INFO: Detected HTTP/2 connection.
+

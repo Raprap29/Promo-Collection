@@ -1,0 +1,43 @@
+2026-01-19 09:09:05,203 DEBUG    root            Loaded Command Group: ['gcloud', 'beta', 'emulators']
+2026-01-19 09:09:05,341 DEBUG    root            Loaded Command Group: ['gcloud', 'beta', 'emulators', 'pubsub']
+2026-01-19 09:09:05,343 DEBUG    root            Loaded Command Group: ['gcloud', 'beta', 'emulators', 'pubsub', 'start']
+2026-01-19 09:09:05,553 DEBUG    root            On GCE from disk cache: False
+2026-01-19 09:09:05,554 DEBUG    root            Running [gcloud.beta.emulators.pubsub.start] with arguments: [--host-port: "<googlecloudsdk.calliope.arg_parsers.HostPort object at 0x7ffffc7b4830>"]
+2026-01-19 09:09:05,555 DEBUG    root            Found Cloud SDK root: /google-cloud-sdk
+2026-01-19 09:09:05,555 INFO     ___FILE_ONLY___ Executing: /google-cloud-sdk/platform/pubsub-emulator/bin/cloud-pubsub-emulator --host=0.0.0.0 --port=8085
+
+2026-01-19 09:09:05,560 DEBUG    root            Chosen display Format:yaml
+2026-01-19 09:09:06,146 INFO     ___FILE_ONLY___ [pubsub] This is the Google Pub/Sub fake.
+
+2026-01-19 09:09:06,147 INFO     ___FILE_ONLY___ [pubsub] Implementation may be incomplete or differ from the real system.
+
+2026-01-19 09:09:06,262 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:09:06 AM com.google.cloud.pubsub.testing.v1.Main main
+
+2026-01-19 09:09:06,263 INFO     ___FILE_ONLY___ [pubsub] INFO: IAM integration is disabled. IAM policy methods and ACL checks are not supported
+
+2026-01-19 09:09:06,466 INFO     ___FILE_ONLY___ [pubsub] SLF4J(W): No SLF4J providers were found.
+
+2026-01-19 09:09:06,467 INFO     ___FILE_ONLY___ [pubsub] SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+
+2026-01-19 09:09:06,467 INFO     ___FILE_ONLY___ [pubsub] SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+
+2026-01-19 09:09:06,947 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:09:06 AM com.google.cloud.pubsub.testing.v1.Main main
+
+2026-01-19 09:09:06,947 INFO     ___FILE_ONLY___ [pubsub] INFO: Server started, listening on 8085
+
+2026-01-19 09:09:07,981 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:09:07 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+
+2026-01-19 09:09:07,981 INFO     ___FILE_ONLY___ [pubsub] INFO: Detected HTTP/2 connection.
+
+2026-01-19 09:09:08,009 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:09:08 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+
+2026-01-19 09:09:08,010 INFO     ___FILE_ONLY___ [pubsub] INFO: Detected HTTP/2 connection.
+
+2026-01-19 09:09:08,923 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:09:08 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+
+2026-01-19 09:09:08,924 INFO     ___FILE_ONLY___ [pubsub] INFO: Detected HTTP/2 connection.
+
+2026-01-19 09:09:09,057 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:09:09 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+
+2026-01-19 09:09:09,057 INFO     ___FILE_ONLY___ [pubsub] INFO: Detected HTTP/2 connection.
+
