@@ -55,21 +55,21 @@ services:
       PUBSUB_EMULATOR_HOST: "pubsub:8085"
       PROJECT_ID: "local-dodrio-project"
 
-  # promo-collection-worker:
-  #   container_name: promo-collection-worker
-  #   build:
-  #     context: ./promo-collection-worker
-  #     dockerfile: Dockerfile
-  #   ports:
-  #     - "8082:8080"
-  #   networks:
-  #     - devnet
-  #   restart: unless-stopped
-  #   command: ["/app/promo-collection-worker"]
-  #   environment:
-  #     NODE_ENV: development
-  #     CHOKIDAR_USEPOLLING: "true"
-  #     WATCHPACK_POLLING: "true"
+  promo-collection-worker:
+    container_name: promo-collection-worker
+    build:
+      context: ./promo-collection-worker
+      dockerfile: Dockerfile
+    ports:
+      - "8082:8082"
+    networks:
+      - devnet
+    restart: unless-stopped
+    command: ["/app/promo-collection-worker"]
+    environment:
+      NODE_ENV: development
+      CHOKIDAR_USEPOLLING: "true"
+      WATCHPACK_POLLING: "true"
 
   pubsub:
     image: gcr.io/google.com/cloudsdktool/cloud-sdk:emulators
