@@ -51,15 +51,15 @@ COPY . .
 # Enable CGO
 ENV CGO_ENABLED=1
 
-# Set the necessary build tags (for Alpine musl, use `musl`)
-ENV GOFLAGS="-tags=musl"
+# Force confluent-kafka-go to link against system-installed librdkafka instead of vendored static archive
+ENV GOFLAGS="-tags=dynamic"
 
 # Build the Go app (binary will be named after the containing directory, e.g., `app`)
 RUN go build cmd/main.go
 
 # Stage 2: Create a minimal Docker image to run the Go application
 FROM alpine:3.21
-RUN apk update && apk upgrade --no-cache
+RUN apk add --no-cache librdkafka && apk upgrade --no-cache
 # Set the Current Working Directory inside the container
 WORKDIR /app/
 
@@ -67,3 +67,4 @@ WORKDIR /app/
 COPY --from=build /app/main .  
 # COPY --from=build /app/.env .
 
+ENTRYPOINT ["/app/main"]

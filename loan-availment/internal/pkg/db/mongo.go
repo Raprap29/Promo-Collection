@@ -50,5 +50,9 @@ func NewMongoDB() (*MongoDB, error) {
 }
 
 func (mdb *MongoDB) Close() error {
+	// Allow safe defer even when mongo initialization failed.
+	if mdb == nil || mdb.Client == nil {
+		return nil
+	}
 	return mdb.Client.Disconnect(context.TODO())
 }

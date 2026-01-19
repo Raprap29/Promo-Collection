@@ -187,7 +187,7 @@ func LoadEnvValues() {
 	REDIS_CERT_CONTENT = GetEnv("REDIS_CERT_CONTENT", "")
 
 	// Pub/Sub Configuration
-	PROJECT_ID = GetEnv("PROJECT_ID", "")
+	PROJECT_ID = GetEnv("PROJECT_ID", "local-dodrio-project")
 	PUBSUB_TOPIC = GetEnv("PUBSUB_TOPIC", "glo-isg-dodrio-d-notification-topic-ddr-762")
 	}
 

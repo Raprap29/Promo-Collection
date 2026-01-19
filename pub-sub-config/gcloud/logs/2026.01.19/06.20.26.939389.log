@@ -1,0 +1,29 @@
+2026-01-19 06:20:26,941 DEBUG    root            Loaded Command Group: ['gcloud', 'beta', 'emulators']
+2026-01-19 06:20:26,982 DEBUG    root            Loaded Command Group: ['gcloud', 'beta', 'emulators', 'pubsub']
+2026-01-19 06:20:26,984 DEBUG    root            Loaded Command Group: ['gcloud', 'beta', 'emulators', 'pubsub', 'start']
+2026-01-19 06:20:27,218 DEBUG    root            Failed to read GCE cache file: [Errno 2] No such file or directory: '/root/.config/gcloud/gce'
+2026-01-19 06:20:27,285 DEBUG    root            Failed to check metadata server: <urlopen error [Errno 111] Connection refused>
+2026-01-19 06:20:27,285 DEBUG    root            On GCE from server: False
+2026-01-19 06:20:27,289 DEBUG    root            Running [gcloud.beta.emulators.pubsub.start] with arguments: [--host-port: "<googlecloudsdk.calliope.arg_parsers.HostPort object at 0x7ffffcb3cec0>"]
+2026-01-19 06:20:27,289 DEBUG    root            Found Cloud SDK root: /usr/lib/google-cloud-sdk
+2026-01-19 06:20:27,290 INFO     ___FILE_ONLY___ Executing: /usr/lib/google-cloud-sdk/platform/pubsub-emulator/bin/cloud-pubsub-emulator --host=0.0.0.0 --port=8085
+
+2026-01-19 06:20:27,294 DEBUG    root            Chosen display Format:yaml
+2026-01-19 06:20:27,766 INFO     ___FILE_ONLY___ [pubsub] This is the Google Pub/Sub fake.
+
+2026-01-19 06:20:27,766 INFO     ___FILE_ONLY___ [pubsub] Implementation may be incomplete or differ from the real system.
+
+2026-01-19 06:20:27,848 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 6:20:27 AM com.google.cloud.pubsub.testing.v1.Main main
+
+2026-01-19 06:20:27,849 INFO     ___FILE_ONLY___ [pubsub] INFO: IAM integration is disabled. IAM policy methods and ACL checks are not supported
+
+2026-01-19 06:20:28,083 INFO     ___FILE_ONLY___ [pubsub] SLF4J(W): No SLF4J providers were found.
+
+2026-01-19 06:20:28,084 INFO     ___FILE_ONLY___ [pubsub] SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+
+2026-01-19 06:20:28,085 INFO     ___FILE_ONLY___ [pubsub] SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+
+2026-01-19 06:20:28,678 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 6:20:28 AM com.google.cloud.pubsub.testing.v1.Main main
+
+2026-01-19 06:20:28,678 INFO     ___FILE_ONLY___ [pubsub] INFO: Server started, listening on 8085
+

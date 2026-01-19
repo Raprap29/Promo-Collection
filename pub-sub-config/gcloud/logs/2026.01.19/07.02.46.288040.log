@@ -1,0 +1,27 @@
+2026-01-19 07:02:46,289 DEBUG    root            Loaded Command Group: ['gcloud', 'beta', 'emulators']
+2026-01-19 07:02:46,324 DEBUG    root            Loaded Command Group: ['gcloud', 'beta', 'emulators', 'pubsub']
+2026-01-19 07:02:46,325 DEBUG    root            Loaded Command Group: ['gcloud', 'beta', 'emulators', 'pubsub', 'start']
+2026-01-19 07:02:46,568 DEBUG    root            On GCE from disk cache: False
+2026-01-19 07:02:46,570 DEBUG    root            Running [gcloud.beta.emulators.pubsub.start] with arguments: [--host-port: "<googlecloudsdk.calliope.arg_parsers.HostPort object at 0x7ffffcb45160>"]
+2026-01-19 07:02:46,570 DEBUG    root            Found Cloud SDK root: /usr/lib/google-cloud-sdk
+2026-01-19 07:02:46,571 INFO     ___FILE_ONLY___ Executing: /usr/lib/google-cloud-sdk/platform/pubsub-emulator/bin/cloud-pubsub-emulator --host=0.0.0.0 --port=8085
+
+2026-01-19 07:02:46,574 DEBUG    root            Chosen display Format:yaml
+2026-01-19 07:02:47,087 INFO     ___FILE_ONLY___ [pubsub] This is the Google Pub/Sub fake.
+
+2026-01-19 07:02:47,088 INFO     ___FILE_ONLY___ [pubsub] Implementation may be incomplete or differ from the real system.
+
+2026-01-19 07:02:47,183 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 7:02:47 AM com.google.cloud.pubsub.testing.v1.Main main
+
+2026-01-19 07:02:47,183 INFO     ___FILE_ONLY___ [pubsub] INFO: IAM integration is disabled. IAM policy methods and ACL checks are not supported
+
+2026-01-19 07:02:47,480 INFO     ___FILE_ONLY___ [pubsub] SLF4J(W): No SLF4J providers were found.
+
+2026-01-19 07:02:47,481 INFO     ___FILE_ONLY___ [pubsub] SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+
+2026-01-19 07:02:47,481 INFO     ___FILE_ONLY___ [pubsub] SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+
+2026-01-19 07:02:48,039 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 7:02:48 AM com.google.cloud.pubsub.testing.v1.Main main
+
+2026-01-19 07:02:48,039 INFO     ___FILE_ONLY___ [pubsub] INFO: Server started, listening on 8085
+

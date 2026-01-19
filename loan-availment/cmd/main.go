@@ -37,7 +37,9 @@ func main() {
 		logger.Error(ctx, "Error connecting to MongoDB: %v", dbErr)
 	}
 	db.MDB = mdb
-	defer mdb.Close()
+	defer func() {
+		_ = mdb.Close()
+	}()
 
 	db.CreateDbTtlIfNotExists()
 

@@ -82,6 +82,7 @@ type PubSubPublisher struct {
 func NewPubSubPublisher(ctx context.Context, projectID string) (*PubSubPublisher, error) {
 	factory := &defaultPublisherFactory{}
 	client, err := factory.NewPublisher(ctx, projectID)
+	logger.Info("Test Project" + projectID)
 	if err != nil {
 		return nil, err
 	}

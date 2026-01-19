@@ -10,10 +10,7 @@ services:
     networks:
       - devnet
     restart: unless-stopped
-    volumes:
-      - ./loan-availment:/app
-    working_dir: /app
-    command: go run cmd/main.go
+    command: ["/app/main"]
     environment:
       NODE_ENV: development
       CHOKIDAR_USEPOLLING: "true"
@@ -29,10 +26,7 @@ services:
     networks:
       - devnet
     restart: unless-stopped
-    volumes:
-      - ./promo-collection:/app
-    working_dir: /app
-    command: go run cmd/promo-collection/main.go
+    command: ["/app/promo-collection"]
     environment:
       NODE_ENV: development
       CHOKIDAR_USEPOLLING: "true"
@@ -48,9 +42,7 @@ services:
     networks:
       - devnet
     restart: unless-stopped
-    volumes:
-      - ./promo-collection-worker:/app
-    command: go run cmd/promo-collection-worker/main.go
+    command: ["/app/promo-collection-worker"]
     environment:
       NODE_ENV: development
       CHOKIDAR_USEPOLLING: "true"
@@ -186,7 +178,6 @@ services:
       - wiremock
       - gcs
       - kafka
-      - mongo
 networks:
   devnet:
     driver: bridge
@@ -195,5 +186,4 @@ volumes:
   promo-collection_go_pkg: {}
   promo-collection-worker_go_pkg: {}
   pubsub_data: {}
-  mongo_data: {}
   gcs_data: {}

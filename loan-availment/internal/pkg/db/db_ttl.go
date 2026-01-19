@@ -13,6 +13,10 @@ import (
 )
 
 func CreateDbTtlIfNotExists() {
+	if MDB == nil || MDB.Database == nil {
+		logger.Info("Skipping TTL index setup: MongoDB is not connected")
+		return
+	}
 
 	ctx, cancel := context.WithTimeout(context.Background(), 10*time.Second)
 	defer cancel()
