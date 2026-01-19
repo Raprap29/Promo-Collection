@@ -11,6 +11,8 @@ services:
       - devnet
     restart: unless-stopped
     command: ["/app/main"]
+    env_file:
+      - ./loan-availment/.env
     environment:
       NODE_ENV: development
       CHOKIDAR_USEPOLLING: "true"
