@@ -1,15 +1,13 @@
 server:
-  port: 8080
-  
+  port: 8084
+
 logging:
   level: "info"
-  
+
 pubsub:
-  project_id: "glo-isg-reloads-project-dev"
+  project_id: "local-dodrio-project"
   subscription: "glo-isg-dodrio-d-notification-subscription-ddr-762"
 
 sms-notification:
- SEND_SMS_NOTIFICATION_URL: "https://dodrio-dev.globetel.com/integration-services/data-builder/mock/notifications"
- SEND_SMS_NOTIFICATION_X_API_KEY: ""
-
-
+  SEND_SMS_NOTIFICATION_URL: "http://wiremock:8080/apigw/sit5/dodrio/ws/soap12/apikey_auth/notif"
+  SEND_SMS_NOTIFICATION_X_API_KEY: "test123"

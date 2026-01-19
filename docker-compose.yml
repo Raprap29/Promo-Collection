@@ -18,6 +18,24 @@ services:
       CHOKIDAR_USEPOLLING: "true"
       WATCHPACK_POLLING: "true"
 
+  notification-service:
+    container_name: notification-service
+    build:
+      context: ./notification-service
+      dockerfile: Dockerfile
+    ports:
+      - "8084:8080"
+    networks:
+      - devnet
+    restart: unless-stopped
+    command: ["/app/notification-service/main"]
+    environment:
+      NODE_ENV: development
+      CHOKIDAR_USEPOLLING: "true"
+      WATCHPACK_POLLING: "true"
+      PUBSUB_EMULATOR_HOST: "pubsub:8085"
+      PUBSUB_PROJECT_ID: "local-dodrio-project"
+
   # promo-collection:
   #   container_name: promo-collection
   #   build:
@@ -171,6 +189,7 @@ services:
     restart: unless-stopped
     depends_on:
       - loan-availment
+      - notification-service
       - pubsub
       - redis
       - wiremock
