@@ -22,5 +22,3 @@ COPY --from=builder --chown=appuser:appuser /app/notification-service /app/notif
 COPY --from=builder --chown=appuser:appuser /app/configs/config.yaml /app/configs/config.yaml
 
 USER appuser
-
-ENTRYPOINT ["/app/notification-service"]

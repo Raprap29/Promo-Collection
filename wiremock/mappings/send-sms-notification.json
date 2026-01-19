@@ -1,7 +1,12 @@
 {
   "request": {
     "method": "POST",
-    "url": "/apigw/sit5/dodrio/ws/soap12/apikey_auth/notif"
+    "url": "/apigw/sit5/dodrio/ws/soap12/apikey_auth/notif",
+    "headers": {
+      "api-key": {
+        "equalTo": "test123"
+      }
+    }
   },
   "response": {
     "status": 200,

@@ -54,6 +54,7 @@ func (s *NotificationService) HandleMessage(ctx context.Context, msg []byte) err
 	// 4. Send SOAP request
 	url := s.cfg.SMSNotificationConfig.SEND_SMS_NOTIFICATION_URL
 	apiKey := s.cfg.SMSNotificationConfig.SEND_SMS_NOTIFICATION_X_API_KEY
+	logger.CtxInfo(ctx, fmt.Sprintf("Url: %v, apiKey: %v", url, apiKey))
 	resp, err := downstream.SendSOAPRequest(url, apiKey, soapPayload)
 	if err != nil {
 		logger.CtxError(ctx, "SOAP request failed", err)

@@ -28,13 +28,15 @@ services:
     networks:
       - devnet
     restart: unless-stopped
-    command: ["/app/notification-service/main"]
+    command: ["/app/notification-service"]
     environment:
       NODE_ENV: development
       CHOKIDAR_USEPOLLING: "true"
       WATCHPACK_POLLING: "true"
       PUBSUB_EMULATOR_HOST: "pubsub:8085"
-      PUBSUB_PROJECT_ID: "local-dodrio-project"
+      # notification-service config loader reads PROJECT_ID and PUBSUB_SUBSCRIPTION
+      PROJECT_ID: "local-dodrio-project"
+      PUBSUB_SUBSCRIPTION: "glo-isg-dodrio-d-notification-subscription-ddr-762"
 
   # promo-collection:
   #   container_name: promo-collection
@@ -76,7 +78,8 @@ services:
     environment:
       - PUBSUB_EMULATOR_HOST=pubsub:8085
       - GOOGLE_CLOUD_PROJECT=local-dodrio-project
-    command: gcloud beta emulators pubsub start --host-port=pubsub:8085
+    # Bind to all interfaces inside the container. Other containers reach it via pubsub:8085.
+    command: gcloud beta emulators pubsub start --host-port=0.0.0.0:8085
     volumes:
       - ./pub-sub-config:/root/.config
     networks:

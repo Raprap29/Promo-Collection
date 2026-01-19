@@ -1,0 +1,84 @@
+2026-01-19 09:25:54,834 DEBUG    root            Loaded Command Group: ['gcloud', 'beta', 'emulators']
+2026-01-19 09:25:54,860 DEBUG    root            Loaded Command Group: ['gcloud', 'beta', 'emulators', 'pubsub']
+2026-01-19 09:25:54,861 DEBUG    root            Loaded Command Group: ['gcloud', 'beta', 'emulators', 'pubsub', 'start']
+2026-01-19 09:25:55,097 DEBUG    root            On GCE from disk cache: False
+2026-01-19 09:25:55,098 DEBUG    root            Running [gcloud.beta.emulators.pubsub.start] with arguments: [--host-port: "<googlecloudsdk.calliope.arg_parsers.HostPort object at 0x7ffffca442f0>"]
+2026-01-19 09:25:55,098 DEBUG    root            Found Cloud SDK root: /google-cloud-sdk
+2026-01-19 09:25:55,099 INFO     ___FILE_ONLY___ Executing: /google-cloud-sdk/platform/pubsub-emulator/bin/cloud-pubsub-emulator --host=pubsub --port=8085
+
+2026-01-19 09:25:55,102 DEBUG    root            Chosen display Format:yaml
+2026-01-19 09:25:55,670 INFO     ___FILE_ONLY___ [pubsub] This is the Google Pub/Sub fake.
+
+2026-01-19 09:25:55,670 INFO     ___FILE_ONLY___ [pubsub] Implementation may be incomplete or differ from the real system.
+
+2026-01-19 09:25:55,781 INFO     ___FILE_ONLY___ [pubsub] Jan 19, 2026 9:25:55 AM com.google.cloud.pubsub.testing.v1.Main main
+
+2026-01-19 09:25:55,781 INFO     ___FILE_ONLY___ [pubsub] INFO: IAM integration is disabled. IAM policy methods and ACL checks are not supported
+
+2026-01-19 09:25:56,020 INFO     ___FILE_ONLY___ [pubsub] SLF4J(W): No SLF4J providers were found.
+
+2026-01-19 09:25:56,020 INFO     ___FILE_ONLY___ [pubsub] SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+
+2026-01-19 09:25:56,021 INFO     ___FILE_ONLY___ [pubsub] SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+
+2026-01-19 09:25:56,696 INFO     ___FILE_ONLY___ [pubsub] Exception in thread "main" java.net.BindException: Address already in use
+
+2026-01-19 09:25:56,696 INFO     ___FILE_ONLY___ [pubsub] 	at java.base/sun.nio.ch.Net.bind0(Native Method)
+
+2026-01-19 09:25:56,697 INFO     ___FILE_ONLY___ [pubsub] 	at java.base/sun.nio.ch.Net.bind(Net.java:577)
+
+2026-01-19 09:25:56,697 INFO     ___FILE_ONLY___ [pubsub] 	at java.base/sun.nio.ch.ServerSocketChannelImpl.netBind(ServerSocketChannelImpl.java:344)
+
+2026-01-19 09:25:56,697 INFO     ___FILE_ONLY___ [pubsub] 	at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:301)
+
+2026-01-19 09:25:56,698 INFO     ___FILE_ONLY___ [pubsub] 	at io.netty.channel.socket.nio.NioServerSocketChannel.doBind(NioServerSocketChannel.java:141)
+
+2026-01-19 09:25:56,698 INFO     ___FILE_ONLY___ [pubsub] 	at io.netty.channel.AbstractChannel$AbstractUnsafe.bind(AbstractChannel.java:561)
+
+2026-01-19 09:25:56,698 INFO     ___FILE_ONLY___ [pubsub] 	at io.netty.channel.DefaultChannelPipeline$HeadContext.bind(DefaultChannelPipeline.java:1281)
+
+2026-01-19 09:25:56,698 INFO     ___FILE_ONLY___ [pubsub] 	at io.netty.channel.AbstractChannelHandlerContext.invokeBind(AbstractChannelHandlerContext.java:600)
+
+2026-01-19 09:25:56,699 INFO     ___FILE_ONLY___ [pubsub] 	at io.netty.channel.AbstractChannelHandlerContext.bind(AbstractChannelHandlerContext.java:579)
+
+2026-01-19 09:25:56,699 INFO     ___FILE_ONLY___ [pubsub] 	at io.netty.channel.DefaultChannelPipeline.bind(DefaultChannelPipeline.java:922)
+
+2026-01-19 09:25:56,699 INFO     ___FILE_ONLY___ [pubsub] 	at io.netty.channel.AbstractChannel.bind(AbstractChannel.java:259)
+
+2026-01-19 09:25:56,699 INFO     ___FILE_ONLY___ [pubsub] 	at io.netty.bootstrap.AbstractBootstrap$2.run(AbstractBootstrap.java:380)
+
+2026-01-19 09:25:56,699 INFO     ___FILE_ONLY___ [pubsub] 	at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java:173)
+
+2026-01-19 09:25:56,700 INFO     ___FILE_ONLY___ [pubsub] 	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:166)
+
+2026-01-19 09:25:56,700 INFO     ___FILE_ONLY___ [pubsub] 	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:472)
+
+2026-01-19 09:25:56,700 INFO     ___FILE_ONLY___ [pubsub] 	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:569)
+
+2026-01-19 09:25:56,700 INFO     ___FILE_ONLY___ [pubsub] 	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:998)
+
+2026-01-19 09:25:56,701 INFO     ___FILE_ONLY___ [pubsub] 	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+
+2026-01-19 09:25:56,701 INFO     ___FILE_ONLY___ [pubsub] 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+
+2026-01-19 09:25:56,701 INFO     ___FILE_ONLY___ [pubsub] 	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+2026-01-19 09:25:56,701 INFO     ___FILE_ONLY___ [pubsub] 	Suppressed: java.lang.RuntimeException: Rethrowing promise failure cause
+
+2026-01-19 09:25:56,701 INFO     ___FILE_ONLY___ [pubsub] 		at io.netty.util.concurrent.DefaultPromise.rethrowIfFailed(DefaultPromise.java:685)
+
+2026-01-19 09:25:56,702 INFO     ___FILE_ONLY___ [pubsub] 		at io.netty.util.concurrent.DefaultPromise.sync(DefaultPromise.java:419)
+
+2026-01-19 09:25:56,702 INFO     ___FILE_ONLY___ [pubsub] 		at io.netty.channel.DefaultChannelPromise.sync(DefaultChannelPromise.java:119)
+
+2026-01-19 09:25:56,702 INFO     ___FILE_ONLY___ [pubsub] 		at io.netty.channel.DefaultChannelPromise.sync(DefaultChannelPromise.java:30)
+
+2026-01-19 09:25:56,702 INFO     ___FILE_ONLY___ [pubsub] 		at io.gapi.emulators.grpc.GrpcServer.start(GrpcServer.java:191)
+
+2026-01-19 09:25:56,702 INFO     ___FILE_ONLY___ [pubsub] 		at com.google.cloud.pubsub.testing.v1.Main.main(Main.java:233)
+
+2026-01-19 09:26:03,661 INFO     ___FILE_ONLY___ 
+
+Command killed by keyboard interrupt
+
+
